@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="#">
-    <img src="images/logo.png" alt="Logo" width="1000" height="500">
+    <img src="images/he4rtlogo.png" alt="Logo" width="1000" height="500">
   </a>
 
   <h3 align="center">He4rt Developers CPP Course</h3>
