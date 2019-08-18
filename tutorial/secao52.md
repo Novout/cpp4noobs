@@ -49,6 +49,13 @@ d - 11
 Para utilizar o std::string é simples:
 
 ```cpp{0}
+/*|--------------------------------------|
+ *|                                      |
+ *|           He4rt Developers           |
+ *|                                      |
+ *|--------------------------------------|
+ */
+
 #include <iostream>
 #include <string>
 
@@ -64,6 +71,104 @@ int main ()
 
 * Por conta do std::string ser uma classe (falaremos sobre classe futuramente), ela tem formas diferentes de se manipular, não podendo considerar como um tipo comum (int, float, etc...).
 
+* Para a entrada de dados com `std::string`, não podemos usar apenas o `std::cin`.
 
+* Vamos utilizar o std::getline
+
+```cpp{0}
+/*|--------------------------------------|
+ *|                                      |
+ *|           He4rt Developers           |
+ *|                                      |
+ *|--------------------------------------|
+ */
+
+#include <iostream>
+#include <string>
+
+int main ()
+{
+    std::string nome;
+
+    std::cout << "Digite seu nome: " << std::endl;
+    std::getline(std::cin, nome); // Primeiramente passamos o que queremos fazer,no caso std::cin, e segundamente a variável
+
+    std::cout << nome << std::endl;
+}
+```
+
+* Mas, essa abordagem tem alguns problemas,por exemplo:
+
+```cpp{0}
+/*|--------------------------------------|
+ *|                                      |
+ *|           He4rt Developers           |
+ *|                                      |
+ *|--------------------------------------|
+ */
+
+#include <iostream>
+#include <string>
+
+int main () 
+{
+    int a, b;
+
+    std::cout << "Digite um numero: " << std::endl;
+    std::cin >> a;
+
+    std::string nome;
+
+    std::cout << "Digite um nome: " << std::endl;
+    std::getline(std::cin, nome);
+
+    std::cout << "Digite um outro numero: " << std::endl;
+    std::cin >> b;
+
+    std::cout << nome << std::endl;
+}
+```
+
+* Este exemplo não irá funcionar, precisamos esvaziar o buffer para conseguir-mos utilizar o `std::getline`, e no caso iremos utilizar o `std::cin.ignore()
+
+```cpp{0}
+/*|--------------------------------------|
+ *|                                      |
+ *|           He4rt Developers           |
+ *|                                      |
+ *|--------------------------------------|
+ */
+
+#include <iostream>
+#include <string>
+
+int main ()
+{
+    int a, b;
+
+    std::cout << "Digite um numero: " << std::endl;
+    std::cin >> a;
+
+    std::cin.ignore();
+
+    std::string nome;
+
+    std::cout << "Digite um nome: " << std::endl;
+    std::getline(std::cin, nome);
+
+    std::cout << "Digite um outro numero: " << std::endl;
+    std::cin >> b;
+
+    std::cout << a << "\n" << b << std::endl;
+    std::cout << nome << std::endl;
+    
+}
+```
+
+:::
+
+::: warning
+
+* std::string tem mais conteúdo, mas deixarem para abordar mais para frente no curso.
 
 :::
