@@ -169,6 +169,6 @@ int main ()
 
 ::: warning
 
-* std::string tem mais conteúdo, mas deixarem para abordar mais para frente no curso.
+* std::string tem mais conteúdo, mas deixarei para abordar mais para frente no curso.
 
 :::
