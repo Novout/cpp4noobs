@@ -11,7 +11,13 @@ module.exports = {
             '/tutorial/': [
                 '',
                 'secao1',
-                'secao2'
+                'secao11',
+                'secao2',
+                'secao3',
+                'secao4',
+                'secao5',
+                'secao51',
+                'secao52',
             ]
         }
     }

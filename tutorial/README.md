@@ -1,7 +1,7 @@
-# Bem-Vindo ao Tutorial!
+# 0 - Bem-Vindo ao Tutorial!
 
 ::: tip
-```cpp{1,5}
+```cpp{0}
     #include <iostream>
 
     int main()
