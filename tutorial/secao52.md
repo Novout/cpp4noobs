@@ -97,7 +97,7 @@ int main ()
 }
 ```
 
-* Mas, essa abordagem tem alguns problemas,por exemplo:
+Mas, essa abordagem tem alguns problemas,por exemplo:
 
 ```cpp{0}
 /*|--------------------------------------|
@@ -129,7 +129,7 @@ int main ()
 }
 ```
 
-* Este exemplo não irá funcionar, precisamos esvaziar o buffer para conseguir-mos utilizar o `std::getline`, e no caso iremos utilizar o `std::cin.ignore()
+Este exemplo não irá funcionar, precisamos esvaziar o buffer para conseguir-mos utilizar o `std::getline`, então precisamos utilizar o `std::cin.ignore()`
 
 ```cpp{0}
 /*|--------------------------------------|
@@ -165,10 +165,12 @@ int main ()
 }
 ```
 
+Sempre quando for dar entrada de dados em um std::string, certifique-se que o buffer está vazio, ou seja, não ter dado entrada de dados em outro tipo, no caso do exemplo utilizamos o `int a`.
+
 :::
 
 ::: warning
 
-* std::string tem mais conteúdo, mas deixarei para abordar mais para frente no curso.
+std::string tem mais conteúdo, mas deixaremos para abordar mais para frente no curso.
 
 :::
