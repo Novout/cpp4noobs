@@ -27,7 +27,7 @@ int main ()
 
 # Sequência
 
-- O procedimente de códico é de cima para baixo e com conteúdos em sequência, separados por `;`
+- O procedimente de código é de cima para baixo e com conteúdos em sequência, separados por `;`
 
 - Será melhor explicado na seção de variáveis.
 
@@ -53,7 +53,7 @@ int main() {}
 
 - Cada programa C++ tem uma função principal que deve ser nomeada <strong>main</strong>.
 
-- Todo o procedimento do seu códico inicia-se nesta função.
+- Todo o procedimento do seu código inicia-se nesta função.
 
 - `{}` é o que chamamos de <strong>escopo</strong>, o que for declarado des de seu início `{` até seu fim `}` irá existir apenas dentro dele.
 
@@ -86,7 +86,7 @@ int main() {}
 
 - `std::endl` também e um objeto da `<iostream>` que executa a quebra de linha,ou seja, sempre quando chamada irá mandar todo o conteúdo sucessor para uma nova linha.
 
-- Todo o final de linha de códico precisamos colocar `;` para indicarmos pro compilador que pode executar o proximo conteúdo.
+- Todo o final de linha de código precisamos colocar `;` para indicarmos pro compilador que pode executar o proximo conteúdo.
 
 - `std::` é um espaço de nome para as bibliotecas padrões do C++, para acessarmos o seu conteúdo precisamos usar `std::` e entrar neste espaço de nome reservado `std`, com `::` indicando a entrada.
 
