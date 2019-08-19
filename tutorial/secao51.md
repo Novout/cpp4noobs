@@ -4,13 +4,13 @@
 
 Primeiramente,vamos falar dos <strong>Operadores Aritméticas</strong> e são, basicamente, os mesmos encontrados na matemática basica.
 
-| Operação        | Operador     | Exemplos                     |
-| ----------------|:------------:| ----------------------------:|
-| Adição          | +            | int a = 5 + 2                |
-| Subtração       | -            | int b = (4 - 2) - 1          |
-| Multiplicação   | *            | int c = ((2 * 2) * 2) * 2    |
-| Divisão         | /            | int d = (8 / 6) / 2          |
-| Módulo          | %            | int e = 4 % 2                |
+| Operação      | Operador |                   Exemplos |
+| ------------- | :------: | -------------------------: |
+| Adição        |    +     |              int a = 5 + 2 |
+| Subtração     |    -     |        int b = (4 - 2) - 1 |
+| Multiplicação |    \*    | int c = ((2 _ 2) _ 2) \* 2 |
+| Divisão       |    /     |        int d = (8 / 6) / 2 |
+| Módulo        |    %     |              int e = 4 % 2 |
 
 :::
 
@@ -18,11 +18,10 @@ Primeiramente,vamos falar dos <strong>Operadores Aritméticas</strong> e são, b
 
 # Exemplos
 
-
 ```cpp{0}
 #include <iostream>
 
-int main () 
+int main ()
 {
     /*|--------------------------------------|
      *|                                      |
@@ -50,7 +49,7 @@ int main ()
 }
 ```
 
-```cpp{0} 
+```cpp{0}
 int main ()
 {
     /*|--------------------------------------|
@@ -77,10 +76,11 @@ int main ()
     std::cout << A << std::endl;
 }
 ```
-* O CPP permite simplificar quando fazemos uma operação com a própria variavel.
+
+- O CPP permite simplificar quando fazemos uma operação com a própria variavel.
 
 ```cpp{0}
-int main () 
+int main ()
 {
     /*|--------------------------------------|
      *|                                      |
@@ -91,10 +91,10 @@ int main ()
 
     float A = 5.5;
 
-    A += 5; // Equivale A = A + 5 
-    A -= 5; // Equivale A = A - 5 
-    A *= 5; // Equivale A = A * 5 
-    A /= 5; // Equivale A = A / 5 
+    A += 5; // Equivale A = A + 5
+    A -= 5; // Equivale A = A - 5
+    A *= 5; // Equivale A = A * 5
+    A /= 5; // Equivale A = A / 5
 
     int a = 2;
 
@@ -102,13 +102,14 @@ int main ()
 }
 ```
 
-* CPP é `Case-sensitive`,ou seja, `int a` é <strong>DIFERENTE</strong> de `int A`.
+- CPP é `Case-sensitive`,ou seja, `int a` é <strong>DIFERENTE</strong> de `int A`.
 
 :::
 
 ::: tip
 
 # Operações com a biblioteca cmath
+
 O Cabeçalho `<cmath>` declara um conjunto de funções para calcular operações e transformações matemáticas comuns:
 
 ```cpp{0}
@@ -136,9 +137,10 @@ int main ()
     std::cout << std::hypot(x, y); // A raiz de (std::pow(x, 2) + std::pow(y,2))
     std::cout << std::abs(x + y) // A soma de x com y em módulo => |x + y|
 
-    //cmath também possui outras funcionalidades, recomendamos acessar http://www.cplusplus.com/reference/cmath/
-    
+    //cmath também possui outras funcionalidades, recomendamos acessar https://en.cppreference.com/w/cpp/header/cmath
+
 }
 
 ```
+
 :::

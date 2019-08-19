@@ -2,9 +2,7 @@
 
 ::: tip
 
-
-
-- Explicamos os tipos principais para você utilizar em seu códico, mas, por que não string's?
+- Explicamos os tipos principais para você utilizar em seu código, mas, por que não string's?
 
 - Nativamente, para se utilizar string's no C++ precisamos usar `char*`, `char[]` ou `const char*`, mas optamos explicar diretamente por uma classe do C++, chamada std::string.
 
@@ -30,7 +28,7 @@ l - 4
 
 o - 5
 
-' '  - 6
+' ' - 6
 
 W - 7
 
@@ -67,13 +65,13 @@ int main ()
 }
 ```
 
-* Mas temos alguns pontos:
+- Mas temos alguns pontos:
 
-* Por conta do std::string ser uma classe (falaremos sobre classe futuramente), ela tem formas diferentes de se manipular, não podendo considerar como um tipo comum (int, float, etc...).
+- Por conta do std::string ser uma classe (falaremos sobre classe futuramente), ela tem formas diferentes de se manipular, não podendo considerar como um tipo comum (int, float, etc...).
 
-* Para a entrada de dados com `std::string`, não podemos usar apenas o `std::cin`.
+- Para a entrada de dados com `std::string`, não podemos usar apenas o `std::cin`.
 
-* Vamos utilizar o std::getline
+- Vamos utilizar o std::getline
 
 ```cpp{0}
 /*|--------------------------------------|
@@ -110,7 +108,7 @@ Mas, essa abordagem tem alguns problemas,por exemplo:
 #include <iostream>
 #include <string>
 
-int main () 
+int main ()
 {
     int a, b;
 
@@ -161,7 +159,7 @@ int main ()
 
     std::cout << a << "\n" << b << std::endl;
     std::cout << nome << std::endl;
-    
+
 }
 ```
 

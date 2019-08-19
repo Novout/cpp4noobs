@@ -2,7 +2,7 @@
 
 ::: warning
 
-* Neste curso, vamos ensinar apenas a instalar e utilizar o Falcon CPP
+- Neste curso, vamos ensinar apenas a instalar e utilizar o Falcon CPP
 
 :::
 
@@ -28,17 +28,17 @@
 
 ::: warning
 
-* Iremos comentar um pouco sobre compiladores na próxima seção
+- Iremos comentar um pouco sobre compiladores na próxima seção
 
 :::
 
 ::: tip
 
-* Na próxima tela, escolha o local onde deseja instalar o Falcon C++
+- Na próxima tela, escolha o local onde deseja instalar o Falcon C++
 
 ![Falcon pt_4](../.vuepress/assets/falcon_pt4.png)
 
-* Avance e pronto, temos a tela inicial do Falcon C++!
+- Avance e pronto, temos a tela inicial do Falcon C++!
 
 ![Falcon pt_5](../.vuepress/assets/falcon_pt5.png)
 
@@ -60,17 +60,17 @@
 
 ![Falcon pt_8](../.vuepress/assets/falcon_pt8.png)
 
-* Para agora, apenas a opção `Arquivo C++` nos interessa, clique nela para criar um novo arquivo C++
+- Para agora, apenas a opção `Arquivo C++` nos interessa, clique nela para criar um novo arquivo C++
 
-*Nesta parte abaixo, é onde escrevemos o nosso códico
+\*Nesta parte abaixo, é onde escrevemos o nosso código
 
 ![Falcon pt_9](../.vuepress/assets/falcon_pt9.png)
 
-* As outras opções do menu `Arquivo` são sugestivas, como abrir um arquivo, salvar e fechar
+- As outras opções do menu `Arquivo` são sugestivas, como abrir um arquivo, salvar e fechar
 
 ![Falcon pt_10](../.vuepress/assets/falcon_pt10.png)
 
-* Na aba `Executar`, temos estas opções:
+- Na aba `Executar`, temos estas opções:
 
 ![Falcon pt_11](../.vuepress/assets/falcon_pt11.png)
 
@@ -84,13 +84,12 @@
 
 ![Falcon pt_12](../.vuepress/assets/falcon_pt12.png)
 
-* Pronto! Você tem toda a base para começarmos a programar CPP!
+- Pronto! Você tem toda a base para começarmos a programar CPP!
 
 :::
 
-
 ::: warning
 
-* IDE's tem muitos atalhos que pode facilitar a sua vida, recomendamos a dar uma olhada na documentação.
+- IDE's tem muitos atalhos que pode facilitar a sua vida, recomendamos a dar uma olhada na documentação.
 
 :::
