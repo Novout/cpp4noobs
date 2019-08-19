@@ -1,4 +1,4 @@
-# 7 - std::array e std::vector
+# 7.1 - std::array e std::vector
 
 ::: tip
 
