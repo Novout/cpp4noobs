@@ -116,3 +116,59 @@ Exemplo de uma vetor => `int vetor[5] = { 3, 7, 4, 10, 4}`
 ![vetor_pt2](../.vuepress/assets/vetor_pt2.png)
 
 :::
+
+::: tip
+
+# Exemplo de Aplicação de Loops em vetores
+
+```cpp{0}
+#include <iostream>
+
+int main () 
+{
+    /*|--------------------------------------|
+     *|                                      |
+     *|           He4rt Developers           |
+     *|                                      |
+     *|--------------------------------------|
+     */
+
+    int idade[5];
+    bool adulto[5];
+    int i = 0; // i representará a posicao no vetor
+    
+    while(i < 5) 
+    {
+        std::cout << "Digite a " << (i + 1) << " idade: \n";
+        std::cin >> idade[i];
+
+        if(idade[i] >= 18) 
+        {
+            adulto[i] = true;
+        }
+        else 
+        {
+            adulto[i] = false;
+        }
+        i++; // Sempre que chegar no final do loop, será interado para conseguirmos dar entrada de dados em outra posição do vetor
+    }
+
+    i = 0; // Zerando i
+
+    while(i < 5) 
+    {
+        if(adulto[i]) // Condicao se adulto[posicao] for verdadeira
+        {
+            std::cout << idade[i] << " e considerado adulto." << std::endl;
+        }
+        else 
+        {
+            std::cout << idade[i] << " nao e considerado adulto." << std::endl;
+        }
+        i++;
+    }
+}
+
+// Para verificar se adulto[posicao] for negativa, poderiamos usar if(!adulto[i])
+```
+:::
