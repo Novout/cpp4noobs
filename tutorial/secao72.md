@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# 7.1 - std::array e std::vector
+# 7.2 - std::array e std::vector
 
 ::: tip
 
@@ -102,6 +101,3 @@ int main ()
     }
 }
 ```
-=======
-# 7.1 - O loop FOR
->>>>>>> upstream/master

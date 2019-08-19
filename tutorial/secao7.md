@@ -61,6 +61,18 @@ int main ()
 }
 ```
 
+:::
+
+::: warning
+
+Vetores são muito eficientes quando queremos trabalhar com a mesma lógica de variável:
+
+![vetor_pt1](../.vuepress/assets/vetor_pt1.png)
+
+:::
+
+::: tip
+
 ```cpp{0}
 #include <iostream>
 
@@ -83,8 +95,24 @@ int main ()
     /**
       * Percorrendo todas as posições do array e mostrando cada elemento que está na posição
     */
-    for(int i = 0; i < 5; ++i){
-      std::cout << meu_array[i];
+
+    int posicao = 0;
+    while(posicao < 5) 
+    {
+      std::cout << meu_array[posicao] << std::endl;
+      posicao++;
     }
 }
 ```
+
+:::
+
+::: warning
+
+Vetores iniciam na posição `0`,`NÃO` em `1`
+
+Exemplo de uma vetor => `int vetor[5] = { 3, 7, 4, 10, 4}`
+
+![vetor_pt2](../.vuepress/assets/vetor_pt2.png)
+
+:::
