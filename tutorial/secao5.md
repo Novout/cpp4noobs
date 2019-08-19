@@ -2,7 +2,7 @@
 
 ::: tip
 
-Um programa pode adquirir dados para trabalhar de várias maneiras: de um arquivo ou banco de dados, através de uma rede, do usuário fornecendo entrada em um teclado ou do programador colocando dados diretamente no código-fonte do próprio programa. Na seção 3, fizemos o programa exibir um `Hello World`, o texto `"Hello World"` Foi inserido diretamente no código-fonte do programa, fornecendo dados para o programa usar. O programa então manipula esses dados enviando-os ao monitor para exibir para o usuário.Os dados em um computador são normalmente armazenados em um formato que é eficiente para armazenamento ou processamento, sendo não-legíveis por humanos. 
+Um programa pode adquirir dados para trabalhar de várias maneiras: de um arquivo ou banco de dados, através de uma rede, do usuário fornecendo entrada em um teclado ou do programador colocando dados diretamente no código-fonte do próprio programa. Na seção 3, fizemos o programa exibir um `Hello World`, o texto `"Hello World"` Foi inserido diretamente no código-fonte do programa, fornecendo dados para o programa usar. O programa então manipula esses dados enviando-os ao monitor para exibir para o usuário.Os dados em um computador são normalmente armazenados em um formato que é eficiente para armazenamento ou processamento, sendo não-legíveis por humanos.
 
 Todos os computadores têm memória, chamada RAM (abreviação de memória de acesso aleatório), que está disponível para uso pelos seus programas. Você pode pensar na RAM como uma série de caixas de correio que podem ser usadas para armazenar dados enquanto o programa está em execução. Um único dado, armazenado na memória em algum lugar, é chamado de valor.
 
@@ -18,16 +18,16 @@ Objetos podem ser nomeados ou não nomeados. Um objeto nomeado é chamado de var
 
 - CPP é uma linguagen fortemente tipada:
 
-| Tipos         | Características                            | Exemplos             |
-| ------------- |:------------------------------------------:| --------------------:|
-| void          | não é associado a nenhum tipo de dado      | null                 |
-| int           | número inteiro                             | 1, 2, 3, 6, -2       |
-| float         | número fracionário (range curto)           | 2.34f, 23.544f, 3.1f |
-| double        | número fracionário (range longo)           | 2.343223232322321    |
-| char          | caractere                                  | 'c', 'A', ' '        |
-| bool          | booleano                                   | true, false          |
+| Tipos  |            Características            |             Exemplos |
+| ------ | :-----------------------------------: | -------------------: |
+| void   | não é associado a nenhum tipo de dado |      Tipo incompleto |
+| int    |            número inteiro             |       1, 2, 3, 6, -2 |
+| float  |   número fracionário (range curto)    | 2.34f, 23.544f, 3.1f |
+| double |   número fracionário (range longo)    |    2.343223232322321 |
+| char   |               caractere               |        'c', 'A', ' ' |
+| bool   |               booleano                |          true, false |
 
-* Existem mais tipos,mas no momento vamos trabalhar apenas com estes.
+- Existem mais tipos, mas no momento vamos trabalhar apenas com estes.
 
 :::
 
@@ -38,7 +38,7 @@ Para criar uma variável, usamos um tipo especial de declaração chamado de def
 Veja um exemplo de como definir uma variável do tipo `int`chamada `inteiro`:
 
 ```cpp{0}
-int main () 
+int main ()
 {
     int inteiro;
 }
@@ -53,7 +53,7 @@ int main ()
 }
 ```
 
-* Nesse caso, estamos atribuindo pelo operador `=` o valor de `5` para a nossa variável chamada `inteiro` do tipo `int`
+- Nesse caso, estamos atribuindo pelo operador `=` o valor de `5` para a nossa variável chamada `inteiro` do tipo `int`
 
 Em tempo de compilação, quando o compilador vê esta declaração, ele faz uma nota para si mesmo que estamos definindo uma variável, dando a ela o nome `inteiro`, e que é do tipo `int` (mais em tipos em um momento). Desse ponto em diante (com algumas limitações sobre as quais falaremos em uma lição futura), sempre que o compilador vir o identificador `inteiro`, saberá que estamos fazendo referência a essa variável.
 
@@ -65,16 +65,16 @@ Quando o programa é executado (chamado runtime), a variável será instanciada.
 
 # Comentários
 
-* Podemos escrever conteúdo no nosso códico apenas para visualização utlizando `//` e `/* */`
+- Podemos escrever conteúdo no nosso código apenas para visualização utlizando `//` e `/* */`
 
 ```cpp{0}
-int main () 
+int main ()
 {
     int numero = 3 // variavel numero de tipo inteiro que recebe o valor '3'
 
     /**
-    Podemos também comentar trechos de códico 
-    que não quisermos utilizar em um 
+    Podemos também comentar trechos de código
+    que não quisermos utilizar em um
     determinado momento
     */
 }
@@ -86,12 +86,12 @@ int main ()
 
 ::: warning
 
-* Exemplos de declaração de variáveis e utilizações gerais:
+- Exemplos de declaração de variáveis e utilizações gerais:
 
 ```cpp{0}
 #include <iostream>
 
-int main () 
+int main ()
 {
     /*|--------------------------------------|
      *|                                      |
@@ -118,6 +118,7 @@ int main ()
     std::cout << inteiro << "\n" << caractere << "\n" << fracionario << "\n";
 }
 ```
+
 :::
 
 ::: warning
@@ -125,7 +126,7 @@ int main ()
 # Curiosidades
 
 ```cpp{0}
-int main () 
+int main ()
 {
     /*|--------------------------------------|
      *|                                      |
@@ -167,11 +168,12 @@ Note que como estamos entrando com dados, temos que indicar pelo operador `>>`, 
 
 # Exemplos
 
-* Entrada e saída de dados de um determinado aluno
+- Entrada e saída de dados de um determinado aluno
+
 ```cpp{0}
 #include <iostream>
 
-int main () 
+int main ()
 {
     int idade; // Declarando a idade do aluno
 
@@ -187,14 +189,14 @@ int main ()
 
 ```
 
-* Lembrando que `std::cout << "Digite a idade do aluno: " << std::endl;` é apenas visual para a interação de programa-usuário.
+- Lembrando que `std::cout << "Digite a idade do aluno: " << std::endl;` é apenas visual para a interação de programa-usuário.
 
-* Existe outras formas de inicialização:
+- Existe outras formas de inicialização:
 
 ```cpp{0}
 #include <iostream>
 
-int main () 
+int main ()
 {
     /*|--------------------------------------|
      *|                                      |
@@ -210,7 +212,7 @@ int main ()
     int c{ 9 }, C{ 10 }; // Inicialização uniforme
 
     std::cout << a << std::endl;
-    std::cout << A << std::endl; 
+    std::cout << A << std::endl;
     std::cout << b << std::endl;
     std::cout << B << std::endl;
     std::cout << c << std::endl;
