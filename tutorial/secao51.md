@@ -8,7 +8,7 @@ Primeiramente,vamos falar dos <strong>Operadores Aritméticas</strong> e são, b
 | ------------- | :------: | -------------------------: |
 | Adição        |    +     |              int a = 5 + 2 |
 | Subtração     |    -     |        int b = (4 - 2) - 1 |
-| Multiplicação |    \*    | int c = ((2 _ 2) _ 2) \* 2 |
+| Multiplicação |    \    | int c = ((2 _ 2) _ 2) \ 2 |
 | Divisão       |    /     |        int d = (8 / 6) / 2 |
 | Módulo        |    %     |              int e = 4 % 2 |
 
@@ -143,4 +143,34 @@ int main ()
 
 ```
 
+:::
+
+::: tip
+
+Operadores de incremento:
+
+Incrementar (somar 1 a) e decrementar (subtrair 1 de) uma variável são tão comuns que possuem seus próprios operadores.
+
+|                 Operador                 |   Símbolo  |  Utilização |                Operação                  |
+| ------                                   | :--------: | ----------: | ----------------------------------------:|
+| Incremento de prefixo (pré-incremento)   |     ++     |     ++x     | Incrementa x e, em seguida, retorna x    |
+| Decremento do prefixo (pré-decremento)   |     --     |     --x     | Decrementa x, em seguida, retorna x      |
+| Incremento de posfixo (pós-incremento)   |     ++     |     x++     | Copia x, incrementa x e devolve a cópia  |
+| Decremento do posfixo (pós-decremento)   |     --     |     x--     | Copia x, decrementa x e devolve a cópia  |
+
+
+```cpp{0}
+#include <iostream>
+ 
+int main()
+{
+    int a ( 5 );
+
+    int b = ++a; // x é incrementado para 6, x é avaliado para o valor 6 e 6 é atribuído para y
+
+    int c = a++; // a é atribuido para c, valendo 6, e após e avaliado para 7
+}
+
+
+```
 :::
