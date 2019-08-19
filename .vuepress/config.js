@@ -18,8 +18,16 @@ module.exports = {
         "secao5",
         "secao51",
         "secao52",
+        "secao6",
+        "secao61",
+        "secao62",
         "secao7",
-        "secao71"
+        "secao71",
+        "secao72",
+        "secao8",
+        "secao81",
+        "secao82",
+        "secao83"
       ]
     }
   }
