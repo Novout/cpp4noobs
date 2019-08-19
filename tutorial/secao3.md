@@ -37,7 +37,7 @@ int main ()
 #include <iostream>
 ```
 
-- Uma biblioteca padrão é uma coleção de classes, funções e variáveis escritas na própria linguagem para facilitar o desenvolvimento de aplicações.
+* Uma biblioteca padrão é uma coleção de classes, funções e variáveis escritas na própria linguagem para facilitar o desenvolvimento de aplicações.
 
 * Utilizando `#include <nome_da_biblioteca>` é possível chamar bibliotecas.
 
@@ -77,14 +77,14 @@ int main() {}
     std::cout << "Hello World" << std::endl;
 ```
 
-- `std::cout` é um objeto da biblioteca `<iostream>` (out de saída) significa que queremos exibir algo na tela, ou seja, uma saída de algum dado que passarmos para o `std::cout`.
+- `std::cout` (out de saída) pertence a biblioteca `<iostream>` significa que queremos exibir algo na tela, ou seja, uma saída de algum dado que passarmos para o `std::cout`.
 
 - O operador << significa que estamos passando algo para 'a direção', no caso para o std::cout, sendo também um operador da `<iostream>`.
 
 - Para passarmos um conjunto de caracteres(chamado de string) precisamos colocar entre "",no caso a string `Hello World`.
   Espaços `" "` também contam como caracteres.
 
-- `std::endl` também e um objeto da `<iostream>` que executa a quebra de linha,ou seja, sempre quando chamada irá mandar todo o conteúdo sucessor para uma nova linha.
+- `std::endl` também pertence a `<iostream>` que executa a quebra de linha,ou seja, sempre quando chamada irá mandar todo o conteúdo sucessor para uma nova linha.
 
 - Todo o final de linha de código precisamos colocar `;` para indicarmos pro compilador que pode executar o proximo conteúdo.
 
