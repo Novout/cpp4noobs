@@ -172,3 +172,73 @@ int main ()
 // Para verificar se adulto[posicao] for negativa, poderiamos usar if(!adulto[i])
 ```
 :::
+
+
+::: tip
+
+# O Loop FOR
+
+Como vimos, para percorrer um vetor precisamos de um loop, para percorrer des de seu início até o seu final.
+
+O `FOR` é muito parecido com o `WHILE`, mas com a vantagem de alguns "recursos" incluídos para facilitar a utilização de loop's em determinadas situações.
+
+FOR:
+```cpp{0}
+for(int i = 0;i < <tamanho_do_vetor>; i++) {}
+```
+
+`int i = 0` é o valor inicializado.
+
+`i < <tamanho_do_vetor>` é a condição para o for continuar.
+
+`i++` é o valor que vai ser iterado ao final do loop, igual utilizamos nos exemplo anterioes com `i++` no final de cada loop.
+
+* Lembrando que poderia ser qualquer outro valor no `i++`, utilizamos como padrão para avançar a próxima posição no vetor
+
+A utilização do `FOR` acaba facilitando percorrer vetores
+```cpp{0}
+#include <iostream>
+
+int main () 
+{
+  /*|--------------------------------------|
+   *|                                      |
+   *|           He4rt Developers           |
+   *|                                      |
+   *|--------------------------------------|
+   */
+
+  double v[5] = { 1.123, 2.43, 1.23, 5.42, 5.4 };
+
+  for(int i = 0; i < 5; i++)
+  {
+    std::cout << v[i] << std::endl;
+  }
+}
+```
+
+```cpp{0}
+#include <iostream>
+
+int main () 
+{
+  /*|--------------------------------------|
+   *|                                      |
+   *|           He4rt Developers           |
+   *|                                      |
+   *|--------------------------------------|
+   */
+  char v[10];
+
+  for(int i = 0; i < 10; i++)
+  {
+    std::cin >> v[i];
+  }
+
+  for(int i = 0; i < 10; i++) 
+  {
+    std::cout << v[i] << " ";
+  }
+}
+```
+:::
