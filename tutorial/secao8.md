@@ -100,8 +100,198 @@ Por conta disso, parâmetros podem ter nomes diferentes em relação ao o que pa
 Exemplo:
 
 ```cpp{0}
+#include <iostream>
 
+void CalcularSoma(int a, int b) 
+{
+    a += b;
+    std::cout << "A soma e: "<< a << std::endl;
+}
 
+void CalcularSubtracao(int a, int b) 
+{
+    a -= b;
+    std::cout << "A subtracao e: "<< a << std::endl;
+}
 
+void CalcularMultiplicacao(int a, int b) 
+{
+    a *= b;
+    std::cout << "A multiplicacao e: "<< a << std::endl;
+}
+
+void CalcularDivisao(int a, int b) 
+{
+    a /= b;
+    std::cout << "A divisao e: "<< a << std::endl;
+}
+
+int main () 
+{
+    /*|--------------------------------------|
+     *|                                      |
+     *|           He4rt Developers           |
+     *|                                      |
+     *|--------------------------------------|
+     */
+
+    int n1, n2;
+    char opcao;
+
+    std::cout << "Digite dois numeros em sequencia: \n";
+    std::cin >> n1 >> n2;
+
+    do 
+    {
+    std::cout << "Digite a opcao: (A) Soma / (B) Subtracao / (C) Multiplicacao / (D) Divisao \n";
+    std::cin >> opcao;
+
+    switch(opcao) 
+    {
+        case 'A': 
+        {
+            CalcularSoma(n1, n2);
+            break;
+        }
+        case 'B':
+        {
+            CalcularSubtracao(n1, n2);
+            break;
+        }
+        case 'C': 
+        {
+            CalcularMultiplicacao(n1, n2);
+            break;
+        }
+        case 'D':
+        {
+            CalcularDivisao(n1, n2);
+            break;
+        }
+        default: 
+        {
+            break;
+        }
+    }
+
+    }while(opcao != 'A' && opcao != 'B' && opcao != 'C' && opcao != 'D'); // Evita de ter um input errado no std::cin >> opcao;
+}
+```
+Mas, temos um porém:
+
+`n1` continua com o mesmo valor, pois `a` só existe dentro da função
+
+Da mesma forma que funções void's retornam nada, temos também funções int,float,char... que retornam o seu tipo
+
+```cpp{0}
+#include <iostream>
+
+int CalcularSoma(int a, int b) 
+{
+    a += b;
+    return a; // Precisamos usar o return no que queremos retornar
+}
+
+int CalcularSubtracao(int a, int b) 
+{
+    a -= b;
+    return a;
+}
+
+int CalcularMultiplicacao(int a, int b) 
+{
+    a *= b;
+    return a;
+}
+
+int CalcularDivisao(int a, int b) 
+{
+    a /= b;
+    return a;
+}
+
+int main () 
+{
+    /*|--------------------------------------|
+     *|                                      |
+     *|           He4rt Developers           |
+     *|                                      |
+     *|--------------------------------------|
+     */
+
+    int n1, n2, resultado;
+    char opcao;
+
+    std::cout << "Digite dois numeros em sequencia: \n";
+    std::cin >> n1 >> n2;
+
+    do 
+    {
+    std::cout << "Digite a opcao: (A) Soma / (B) Subtracao / (C) Multiplicacao / (D) Divisao \n";
+    std::cin >> opcao;
+
+    switch(opcao) 
+    {
+        case 'A': 
+        {
+            resultado = CalcularSoma(n1, n2); // resultado recebe o retorno da função
+            break;
+        }
+        case 'B':
+        {
+            resultado = CalcularSubtracao(n1, n2);
+            break;
+        }
+        case 'C': 
+        {
+            resultado = CalcularMultiplicacao(n1, n2);
+            break;
+        }
+        case 'D':
+        {
+            resultado = CalcularDivisao(n1, n2);
+            break;
+        }
+        default: 
+        {
+            break;
+        }
+    }
+
+    }while(opcao != 'A' && opcao != 'B' && opcao != 'C' && opcao != 'D'); // Evita de ter um input errado no std::cin >> opcao;
+
+    std::cout << "O resultado e: " << resultado << std::endl;
+}
+```
+:::
+
+::: tip
+
+Como você já deve ter notado, a função main retorna um inteiro e podemos explicitar isso
+```cpp{0}
+#include <iostream>
+
+int main () 
+{
+    std::cout << "Hello World" << std::endl;
+
+    return 0;
+}
+```
+
+Podemos retornar a função main para indicar que tudo ocorreu bem para conseguir chegar no final do escopo da função principal
+
+Temos a biblioteca `<cstdlib>` que possui `EXIT_SUCCESS`, considerado uma convensão para programas em C++
+
+```cpp{0}
+#include <iostream>
+#include <cstdlib>
+
+int main () 
+{
+    std::cout << "Hello World" << std::endl;
+
+    return EXIT_SUCCESS;
+}
 ```
 :::
