@@ -66,9 +66,7 @@ int main()
     std::array<std::string, ALUNOS> nomes; // Um array de string de 3 posições
 
     for(std::string &element : nomes) // & significa que estamos passando a referência de uma posição em nomes, teremos uma seção explicanto o que é uma referência.
-    {
         std::cin >> element;
-    }
 
     ExibirNomes(nomes);
 }
