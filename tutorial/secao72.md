@@ -61,8 +61,8 @@ int main ()
 
     std::cout << "Notas dos alunos: \n\n";
 
-    for (auto i : alunos_nota){ // Percorre cada linha
-        for (auto j : i){ // Percorre cada coluna, assim que chegar ao final da coluna, vai para a próxima linha
+    for (float i : alunos_nota){ // Percorre cada linha
+        for (float j : i){ // Percorre cada coluna, assim que chegar ao final da coluna, vai para a próxima linha
             std::cout << j << ' ';
         }
 

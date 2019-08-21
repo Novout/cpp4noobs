@@ -273,13 +273,20 @@ Como você já deve ter notado, a função main retorna um inteiro e podemos exp
 
 int main () 
 {
+    /*|--------------------------------------|
+     *|                                      |
+     *|           He4rt Developers           |
+     *|                                      |
+     *|--------------------------------------|
+     */
+
     std::cout << "Hello World" << std::endl;
 
     return 0;
 }
 ```
 
-Podemos retornar a função main para indicar que tudo ocorreu bem para conseguir chegar no final do escopo da função principal
+Podemos retornar a função main para indicar que tudo ocorreu bem por conseguir chegar no final do escopo da função principal
 
 Temos a biblioteca `<cstdlib>` que possui `EXIT_SUCCESS`, considerado uma convensão para programas em C++
 
@@ -289,9 +296,22 @@ Temos a biblioteca `<cstdlib>` que possui `EXIT_SUCCESS`, considerado uma conven
 
 int main () 
 {
+    /*|--------------------------------------|
+     *|                                      |
+     *|           He4rt Developers           |
+     *|                                      |
+     *|--------------------------------------|
+     */
+
     std::cout << "Hello World" << std::endl;
 
     return EXIT_SUCCESS;
 }
 ```
+:::
+
+::: warning
+
+Como já falamos, recomendamos fortemente que leia a documentação das bibliotecas que vamos apresentar durante o curso, assim conseguindo extrar ao máximo o que a linguagem C++ fornece ao desenvolvedor.
+
 :::
