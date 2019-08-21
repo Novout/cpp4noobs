@@ -36,6 +36,7 @@ Assim podemos modificar a forma de execução do nosso códico
 
 ```cpp{0}
 #include <iostream>
+#include <cstdlib>
 
 int main(int argc, char **argv) 
 {
@@ -56,6 +57,8 @@ int main(int argc, char **argv)
     {
         std::cout << a << " " << b << std::endl;
     }
+
+    return EXIT_SUCCESS;
 }
 ```
 :::
