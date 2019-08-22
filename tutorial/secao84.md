@@ -74,6 +74,7 @@ int main(int argc,const char **argv)
 ```
 ```cpp{0}
 #include <iostream>
+#include <cstdlib>
 
 int main() 
 {
@@ -90,6 +91,8 @@ int main()
     [](std::string h, std::string d){ std::cout << h + " " + d ;}( he4rt, developers);
 
     // Saida: He4rt Developers
+
+    return EXIT_SUCCESS;
 }
 ```
 :::
