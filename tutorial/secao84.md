@@ -2,7 +2,7 @@
 
 ::: tip
 
-Funções lambda são exclusivas do C++11, onde podemos declarar funções para uma variável sem a necessidade de criar uma função em outra localização
+Funções lambda foram implementadas no C++11 e versões posteriores, onde podemos declarar objetos de funções em forma anônima, podendo ser utilizada em contextos assíncronos.
 
 Sintaxe:
 
@@ -50,7 +50,9 @@ auto func()
 }
 ```
 
-Também podemos fazer lambda localmente para executar um determinado procedimento:
+Também podemos fazer lambda localmente para executar um determinado procedimento
+
+Exemplos:
 
 ```cpp{0}
 #include <iostream>
@@ -64,10 +66,30 @@ int main(int argc,const char **argv)
    *|                                      |
    *|--------------------------------------|
    */
-   
+
     []{ std::cout << "He4rt Developers"; }();
 
     return EXIT_SUCCESS;
+}
+```
+```cpp{0}
+#include <iostream>
+
+int main() 
+{
+    /*|--------------------------------------|
+     *|                                      |
+     *|           He4rt Developers           |
+     *|                                      |
+     *|--------------------------------------|
+     */
+
+    std::string he4rt = "He4rt";
+    std::string developers = "Developers";
+
+    [](std::string h, std::string d){ std::cout << h + " " + d ;}( he4rt, developers);
+
+    // Saida: He4rt Developers
 }
 ```
 :::
