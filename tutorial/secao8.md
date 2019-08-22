@@ -312,6 +312,6 @@ int main ()
 
 ::: warning
 
-Como já falamos, recomendamos fortemente que leia a documentação das bibliotecas que vamos apresentar durante o curso, assim conseguindo extrar ao máximo o que a linguagem C++ fornece ao desenvolvedor.
+Como já falamos, recomendamos fortemente que leia a documentação das bibliotecas que vamos apresentar durante o curso, assim conseguindo extrair ao máximo o que a linguagem C++ fornece ao desenvolvedor.
 
 :::

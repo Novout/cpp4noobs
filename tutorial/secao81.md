@@ -50,9 +50,9 @@ O que ele faz é ler todo o códico em busca do que queremos definir e após exe
 #include <string>
 #include <array>
 
-#define ALUNOS 3
+#define QNT_ALUNOS 3
 
-void ExibirNomes(std::array<std::string, ALUNOS> arr);
+void exibir_nome(std::array<std::string, ALUNOS> arr);
 
 int main() 
 {
@@ -63,15 +63,15 @@ int main()
      *|--------------------------------------|
      */
 
-    std::array<std::string, ALUNOS> nomes; // Um array de string de 3 posições
+    std::array<std::string, QNT_ALUNOS> nomes; // Um array de string de 3 posições
 
     for(std::string &element : nomes) // & significa que estamos passando a referência de uma posição em nomes, teremos uma seção explicanto o que é uma referência.
         std::cin >> element;
 
-    ExibirNomes(nomes);
+    exibir_nome(nomes);
 }
 
-void ExibirNomes(std::array<std::string, ALUNOS> arr) 
+void exibir_nome(std::array<std::string, QNT_ALUNOS> arr) 
 {
     for(std::string &element : arr)
         std::cout << element << " ";
