@@ -1,7 +1,5 @@
 # 3 - Primeiro Hello World
 
-::: tip
-
 Vamos começar com o primeiro Hello World!
 
 - 1 : Crie um projeto em sua IDE escolhida
@@ -59,17 +57,9 @@ int main() {}
 
 - Como `main` é uma função, precisamos colocar `()` após a declaração de seu nome.
 
-:::
-
-::: warning
-
 - Os conceitos sobre o que é uma função será explicado na seção de Funções, por enquanto não se preocupe com isso.
 
 - Vamos aprender a como manipular o nosso conteúdo para que ele continue existindo mesmo fora do escopo futuramente.
-
-:::
-
-::: tip
 
 # Saída de Dados e Biblioteca `<iostream>`
 
@@ -89,10 +79,6 @@ int main() {}
 - Todo o final de linha de código precisamos colocar `;` para indicarmos pro compilador que pode executar o proximo conteúdo.
 
 - `std::` é um espaço de nome para as bibliotecas padrões do C++, para acessarmos o seu conteúdo precisamos usar `std::` e entrar neste espaço de nome reservado `std`, com `::` indicando a entrada.
-
-:::
-
-::: warning
 
 ```cpp{0}
 #include <iostream>
@@ -124,10 +110,4 @@ AB
 
 - Algumas IDE's faz a quebra de linha automaticamente sem a necessidade do `std::endl`.
 
-:::
-
-::: danger
-
 - Todos os conceitos passado será utilizado ao longo do curso, então não se assuste que com a prática estes conceitos serão facilmente fixados,e estaremos disponibilizando listas de exercícios com gabarito para melhor fixação.
-
-:::

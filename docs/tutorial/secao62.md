@@ -1,7 +1,5 @@
 # 6.2 - Teste de Mesa
 
-
-::: tip
 O Teste de Mesa é um processo manual que é utilizado para validar a lógica de um determinado algoritmo. Ele é utilizado principalmente em algoritmos quando a linguagem utilizada não possui nenhuma ferramenta automatizada de depuração.
 
 Existe testes bem mais elaborados, mas para começar-mos a entender o fluxo de um programa pode ser útil.
@@ -29,10 +27,6 @@ Utilizaremos a sequência:
 4 - Percorra seu código linha a linha, preenchendo a tabela. A coluna "Passo" deverá ser incrementada a cada nova linha na tabela; a coluna "Linha" deve indicar o número da linha no código que está sendo analisada e em cada coluna das variáveis deve constar o respectivo valor para cada variável após a linha de código ser executada.
 
 5 - Execute o passo 4 até o programa finalizar.
-
-:::
-
-::: tip
 
 Vamos utilizar de exemplo o seguinte algoritmo:
 
@@ -147,5 +141,3 @@ Dessa vez, o loop principal irá retornar false, por conta que A não é maior o
 Pronto, finalizamos nosso teste de mesa
 
 * Em caso de testes com saída de dados, faça uma tabela separada apenas para a saída.
-
-:::

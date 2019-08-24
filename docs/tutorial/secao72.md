@@ -1,6 +1,5 @@
 # 7.2 - Matrizes
 
-::: tip
 Matrizes são vetores acoplados que formam linhas e colunas.
 
 Por exemplo,temos 5 alunos, e cada aluno possui 5 anos.
@@ -70,4 +69,11 @@ int main ()
     }
 }
 ```
+
+::: danger
+
+Só utilize objetos como no caso o `std::array` em caso se for utilizar algum recurso que você precise, se não é apenas despercício de memória, igual no exemplo acima.
+
+Novamente, recomendamos fortemente que leia a documentação das bibliotecas para melhor proveito de seus objetos.
+
 :::

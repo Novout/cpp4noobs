@@ -1,7 +1,5 @@
 # 8.3 - Recursão
 
-::: tip
-
 Recursão é um conceito não exclusivo do C++, onde uma função chama a si mesma até que uma condição seja alcançada.
 
 Tudo que pode ser resolvido por loops, pode ser resolvido por recursão.
@@ -11,10 +9,6 @@ Por que usar recursão?
 
 Legibilidade, algumas soluções são mais fáceis de serem expressadas por recursão.
 Assim como outras são mais fáceis através de loops.
-
-:::
-
-::: warning
 
 # Exemplos
 

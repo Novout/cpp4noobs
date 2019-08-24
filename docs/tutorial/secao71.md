@@ -1,14 +1,8 @@
 # 7.1 - std::array e std::vector
 
-::: tip
-
 C arrays não são muito flexíveis, algo que dificulta o desenvolvimento de um programa.
 
 Felizmente, no C++ temos outras opções (que você deve usar): O std::array e std::vector
-
-:::
-
-::: warning
 
 # Exemplos
 

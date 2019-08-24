@@ -1,12 +1,6 @@
 # 1.1 - Instalando o Falcon C++
 
-::: warning
-
 - Neste curso, vamos ensinar apenas a instalar e utilizar o Falcon CPP
-
-:::
-
-::: tip
 
 - Primeiramente, <a href="https://sourceforge.net/projects/falconcpp" target="_blank" rel="noreferrer">vamos entrar no site do Falcon C++</a>
 
@@ -24,15 +18,7 @@
 
 ![Falcon pt_3](../.vuepress/assets/falcon_pt3.png)
 
-:::
-
-::: warning
-
 - Iremos comentar um pouco sobre compiladores na próxima seção
-
-:::
-
-::: tip
 
 - Na próxima tela, escolha o local onde deseja instalar o Falcon C++
 
@@ -41,10 +27,6 @@
 - Avance e pronto, temos a tela inicial do Falcon C++!
 
 ![Falcon pt_5](../.vuepress/assets/falcon_pt5.png)
-
-:::
-
-::: tip
 
 - Agora vamos mostrar um pouco sobre como utilizar a IDE sem muitos problemas
 
@@ -85,8 +67,6 @@
 ![Falcon pt_12](../.vuepress/assets/falcon_pt12.png)
 
 - Pronto! Você tem toda a base para começarmos a programar CPP!
-
-:::
 
 ::: warning
 

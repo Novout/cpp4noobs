@@ -1,8 +1,5 @@
 # 6 - Condições
 
-
-::: tip
-
 Agora iremos falar sobre condições,mas iremos te mostrar a tabela de comparação para se utilizar em conjunto com condições.
 
 Operadores de comparação: 
@@ -80,9 +77,6 @@ int main ()
     }
 }
 ```
-:::
-
-::: warning
 
 ```cpp{0}
 #include <iostream>
@@ -118,9 +112,6 @@ int main ()
 }
 
 ```
-:::
-
-::: tip
 
 # Operadores Lógicos
 
@@ -210,4 +201,3 @@ int main ()
     std::cout << "O resultado da operacao e: " << resultado << std::endl;
 }
 ```
-:::

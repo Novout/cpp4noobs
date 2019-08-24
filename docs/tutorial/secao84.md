@@ -1,7 +1,5 @@
 # 8.4 - Funções Lambda
 
-::: tip
-
 Funções lambda foram implementadas no C++11 e versões posteriores, onde podemos declarar objetos de funções em forma anônima, podendo ser utilizada em contextos assíncronos.
 
 Sintaxe:
@@ -95,4 +93,3 @@ int main()
     return EXIT_SUCCESS;
 }
 ```
-:::

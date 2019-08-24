@@ -1,7 +1,5 @@
 # 1 - Configurando o Ambiente
 
-::: tip
-
 Seção 1 - Opções e Configurando o Ambiente
 
 Primeiramente, precisamos configurar o ambiente de programação para conseguirmos começar a programar.
@@ -27,5 +25,3 @@ Existe várias IDE's para C++ e iremos te dar algumas opções:
 Sinta-se livre para escolher a IDE se sua preferência
 
 * Escolha a que deseja utilizar, e siga os passos da seção que corresponde a IDE.
-
-:::

@@ -1,7 +1,5 @@
 # 6.1 - Loops
 
-::: tip
-
 Loops em C++ são condições que irão ser repetidas até que uma condição retorne `false`
 
 Em C++,temos três loop's padrões: `while` (enquanto), `do while` (faz ... enquanto) e for(for é uma versão com recursos extras do `while`,iremos falar sobre o `for` na seção de vetores).
@@ -36,9 +34,6 @@ int main ()
     // Após a exibição de 9, i é iterado e se torna 10, mas 10 < 10 é uma condição falsa, então o loop acaba saindo de seu escopo.
 }
 ```
-:::
-
-::: tip
 
 # Do while
 
@@ -70,9 +65,6 @@ int main ()
     }while(st == "Ola!"); // Neste caso, st ainda sim será mostrado pois está anteriormente a condição, e o loop apenas retorna falso na condição.
 }
 ```
-:::
-
-::: tip
 
 Com estes conhecimentos, já podemos fazer algoritmos mais rebuscado,como por exemplo:
 
@@ -132,4 +124,3 @@ int main ()
 ```
 
 Para não precisar usar (|| i == 0) você poderia inicializar o menor_peso com 999999 e maior_peso_homens com 0, por exemplo.
-:::

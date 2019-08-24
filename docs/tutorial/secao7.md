@@ -1,7 +1,5 @@
 # 7 - Vetores (C Arrays)
 
-::: tip
-
 Conforme a complexidade de um programa cresce, surge a necessidade de agrupar variáveis e entidades.
 Um vetor é uma estrutura (não é a única) que serve para este propósito.
 
@@ -11,10 +9,6 @@ O número de elementos que essa estrutura é capaz de suportar não muda durante
 O tamanho do vetor precisa ser conhecido durante a compilação.
 
 Veremos como criar um array que pode mudar de tamanho durante a execução do programa em outra seção.
-
-:::
-
-::: warning
 
 # Exemplos
 
@@ -61,17 +55,9 @@ int main ()
 }
 ```
 
-:::
-
-::: warning
-
 Vetores são muito eficientes quando queremos trabalhar com a mesma lógica de variável:
 
 ![vetor_pt1](../.vuepress/assets/vetor_pt1.png)
-
-:::
-
-::: tip
 
 ```cpp{0}
 #include <iostream>
@@ -105,19 +91,11 @@ int main ()
 }
 ```
 
-:::
-
-::: warning
-
 Vetores iniciam na posição `0`,`NÃO` em `1`
 
 Exemplo de uma vetor => `int vetor[5] = { 3, 7, 4, 10, 4}`
 
 ![vetor_pt2](../.vuepress/assets/vetor_pt2.png)
-
-:::
-
-::: tip
 
 # Exemplo de Aplicação de Loops em vetores
 
@@ -171,10 +149,6 @@ int main ()
 
 // Para verificar se adulto[posicao] for negativa, poderiamos usar if(!adulto[i])
 ```
-:::
-
-
-::: tip
 
 # O Loop FOR
 
@@ -241,4 +215,3 @@ int main ()
   }
 }
 ```
-:::
