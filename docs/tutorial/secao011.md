@@ -64,3 +64,18 @@ O programa acima imprimiu:
 ```
 
 ## Ponteiros
+
+Com o operador de endereço e os operadores de referência, podemos falar sobre ponteiros. Um ponteiro é uma variável que contém um endereço de memória como seu valor.
+
+Os ponteiros costumam ser vistos como uma das partes mais confusas da linguagem C++, mas são surpreendentemente simples quando explicados corretamente.
+
+### Declarando um ponteiro
+
+As variáveis ​​de ponteiro são declaradas como variáveis ​​normais, apenas com um asterisco entre o tipo de dados e o nome da variável. Note que este asterisco não é um operador de de-referência. Faz parte da sintaxe de declaração do ponteiro.
+
+```cpp{0}
+int *iPtr; // um ponteiro para um valor de tipo int
+double *dPtr; // um ponteiro para um valor do tipo double
+ 
+int *iPtr4, *iPtr5; // declarar mais de um ponteiro em uma linha
+```
