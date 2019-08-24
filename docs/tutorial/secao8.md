@@ -2,11 +2,11 @@
 
 ::: tip
 
-Você já sabe que todo programa deve ter uma função chamada main (que é onde o programa inicia a execução quando é executado). No entanto, à medida que os programas começam a ficar cada vez mais longos, a colocação de todo o código dentro da função principal torna-se cada vez mais difícil de gerir. As funções fornecem uma maneira de dividir nossos programas em pequenos blocos modulares que são mais fáceis de organizar, testar e usar. A maioria dos programas usa muitas funções. A biblioteca padrão C ++ vem com muitas funções já escritas para você usar - no entanto, é tão comum escrever as suas próprias. As funções que você escreve são chamadas de funções definidas pelo usuário.
+Você já sabe que todo programa deve ter uma função chamada main (que é onde o programa inicia a execução quando é executado). No entanto, a medida que os programas começam a ficar cada vez mais longos, a colocação de todo o código dentro da função principal torna-se cada vez mais difícil de trabalhar. As funções fornecem uma maneira de dividir nossos programas em pequenos blocos modulares que são mais fáceis de organizar, testar e usar. A maioria dos programas usa muitas funções. A biblioteca padrão C++ vem com muitas funções já escritas para você usar, mas é tão comum escrever as suas próprias.
 
 Considere um caso que pode ocorrer na vida real: você está lendo um livro quando lembra que precisa fazer uma ligação telefônica. Você coloca um marcador em seu livro, faz a ligação e, quando termina a ligação, volta ao local marcado e continua seu livro exatamente onde parou.
 
-Programas C ++ podem funcionar da mesma maneira. Um programa estará executando instruções seqüencialmente dentro de uma função quando encontrar uma chamada de função. Uma chamada de função é uma expressão que informa a CPU para interromper a função atual e executar outra função. A CPU “coloca um marcador” no ponto atual de execução e, em seguida, chama (executa) a função nomeada na chamada de função. Quando a função chamada termina, a CPU retorna ao ponto marcado e retoma a execução.
+Programas C++ podem funcionar da mesma maneira. Um programa estará executando instruções seqüencialmente dentro de uma função quando encontrar uma chamada de função. Uma chamada de função é uma expressão que informa a CPU para interromper a função atual e executar outra função. A CPU “coloca um marcador” no ponto atual de execução e, em seguida, chama (executa) a função nomeada na chamada de função. Quando a função chamada termina, a CPU retorna ao ponto marcado e retoma a execução.
 
 :::
 
