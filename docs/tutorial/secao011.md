@@ -1,4 +1,4 @@
-# 11 - Ponteiros
+# 11 - Introdução a Ponteiros
 
 Na seção 5, vimos que uma variável eh um nome para um espaço de memoria que contem um valor. quando nosso programa instancia uma variável, um endereço de memoria livre eh automaticamente interligado a variável, e qualquer valor que definimos para a variavel eh armazenado nesse endereço de memoria.
 
