@@ -1,0 +1,16 @@
+{
+  "name": "He4rt-CPP-Tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial de C++ da He4rt Developers",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docks"
+  },
+  "repository": "https://github.com/Novout/He4rt-CPP-Tutorial.git",
+  "author": "Thiago Rezende <bitrateti@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "vuepress": "^1.0.3"
+  }
+}
