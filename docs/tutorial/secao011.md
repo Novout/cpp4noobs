@@ -79,3 +79,65 @@ double *dPtr; // um ponteiro para um valor do tipo double
  
 int *iPtr4, *iPtr5; // declarar mais de um ponteiro em uma linha
 ```
+
+### Definindo um valor para um ponteiro
+
+Como os ponteiros só contêm endereços, quando atribuímos um valor a um ponteiro, esse valor precisa ser um endereço. Uma das coisas mais comuns a fazer com ponteiros é que eles mantenham o endereço de uma variável diferente.
+
+Para obter o endereço de uma variável, usamos operador de endereço (&) que vimos anteriormente:
+
+```cpp{0}
+int value = 5;
+int *ptr = &value; // inicializa ptr com o endereço de memoria da variavel value
+```
+
+Para demonstrar que ptr tem o mesmo endereço de memoria de value use o codigo a seguir:
+
+```cpp{0}
+#include <iostream>
+ 
+int main()
+{
+    int value = 5;
+    int *ptr = &value; // inicializa ptr com o endereço de memoria da variavel value
+ 
+    std::cout << &value << '\n'; // exibe o edereco da variavel value
+    std::cout << ptr << '\n'; // exibe o endereco que ptr esta armazenando
+ 
+    return 0;
+}
+```
+
+O programa acima imprimiu:
+```
+0012FF7C
+0012FF7C
+```
+
+### De-referênciando ponteiros
+
+Quando temos uma variável de ponteiro apontando para algo, a outra coisa comum a fazer com ela é cancelar o ponteiro para obter o valor do que está apontando. Um ponteiro de-referênciado avalia o conteúdo do endereço para o qual está apontando.
+
+```cpp{0}
+int value = 5;
+std::cout << &value; // exibe o endereco de value
+std::cout << value; // exibe o conteudo
+ 
+int *ptr = &value; // ptr aponta para value
+std::cout << ptr; // exibe o conteudo de ptr, que eh o endereco de value
+std::cout << *ptr; // de-referência ptr, retornando o valor contido no endereco
+```
+
+O programa acima imprimiu:
+```
+0012FF7C
+5
+0012FF7C
+5
+```
+
+### Mais sobre ponteiros
+
+Essa sessão tem o objetivo de introduzir os ponteiros, por isso não houve nenhum conceito mais complexo envolvendo eles.
+
+As aplicações, casos de uso, vantagens e desvantagens da utilização de ponteiros são tratadas em sessões adiante.
