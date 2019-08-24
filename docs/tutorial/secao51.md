@@ -1,7 +1,5 @@
 # 5.1 - Operações Matemáticas
 
-::: tip
-
 Primeiramente,vamos falar dos <strong>Operadores Aritméticas</strong> e são, basicamente, os mesmos encontrados na matemática basica.
 
 | Operação      | Operador |                   Exemplos |
@@ -11,10 +9,6 @@ Primeiramente,vamos falar dos <strong>Operadores Aritméticas</strong> e são, b
 | Multiplicação |    \    | int c = ((2 _ 2) _ 2) \ 2 |
 | Divisão       |    /     |        int d = (8 / 6) / 2 |
 | Módulo        |    %     |              int e = 4 % 2 |
-
-:::
-
-::: warning
 
 # Exemplos
 
@@ -104,10 +98,6 @@ int main ()
 
 - CPP é `Case-sensitive`,ou seja, `int a` é <strong>DIFERENTE</strong> de `int A`.
 
-:::
-
-::: tip
-
 # Operações com a biblioteca cmath
 
 O Cabeçalho `<cmath>` declara um conjunto de funções para calcular operações e transformações matemáticas comuns:
@@ -143,10 +133,6 @@ int main ()
 
 ```
 
-:::
-
-::: tip
-
 Operadores de incremento:
 
 Incrementar (somar 1 a) e decrementar (subtrair 1 de) uma variável são tão comuns que possuem seus próprios operadores.
@@ -170,7 +156,4 @@ int main()
 
     int c = a++; // a é atribuido para c, valendo 6, e após e avaliado para 7
 }
-
-
 ```
-:::

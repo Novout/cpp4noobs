@@ -1,7 +1,5 @@
 # 8.5 - Keyword Static
 
-::: tip
-
 A keyword que iremos falar agora, a `static` possui funcionamentos diferentes dependendo da situação, mas iremos falar dela exclusivamente dentro de funções fora de classe.
 
 Se é uma variável em uma função, ela não pode ser acessada de fora da função, como qualquer outra variável local. 
@@ -34,4 +32,3 @@ int main()
     }
 } 
 ```
-:::

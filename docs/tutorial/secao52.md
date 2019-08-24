@@ -1,16 +1,10 @@
 # 5.2 - std::string
 
-::: tip
-
 - Explicamos os tipos principais para você utilizar em seu código, mas, por que não string's?
 
 - Nativamente, para se utilizar string's no C++ precisamos usar `char*`, `char[]` ou `const char*`, mas optamos explicar diretamente por uma classe do C++, chamada std::string.
 
 - Para utilizar-mos, precisamos incluir tanto o `<iostream>` como uma nova biblioteca, a `<string>`.
-
-:::
-
-::: tip
 
 String's não são nada menos que cadeias de caracteres, por exemplo:
 
@@ -39,10 +33,6 @@ r - 9
 l - 10
 
 d - 11
-
-:::
-
-::: tip
 
 Para utilizar o std::string é simples:
 
@@ -165,10 +155,4 @@ int main ()
 
 Sempre quando for dar entrada de dados em um std::string, certifique-se que o buffer está vazio, ou seja, não ter dado entrada de dados em outro tipo, no caso do exemplo utilizamos o `int a`.
 
-:::
-
-::: warning
-
 std::string tem mais conteúdo, mas deixaremos para abordar mais para frente no curso.
-
-:::

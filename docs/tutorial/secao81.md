@@ -1,6 +1,5 @@
 # 8.1 - Protótipo de Função
 
-::: tip
 Nos exemplos, criamos nossas funções acima da nossa função main.
 
 Se criarmos abaixo, por conta da ordem de compilação o C++ acaba não reconhecendo a função que está sendo chamada,pois ela ainda não existe
@@ -34,9 +33,6 @@ void ExibirNome(std::string nome)
 O que fizemos foi:
 
 Indicar que existe uma função `ExibirNome`, sendo um `protótipo`, e apos a função main executar sua lógica.
-:::
-
-::: tip
 
 # `#define`
 
@@ -77,4 +73,3 @@ void exibir_nome(std::array<std::string, QNT_ALUNOS> arr)
         std::cout << element << " ";
 }
 ```
-:::

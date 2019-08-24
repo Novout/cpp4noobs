@@ -1,6 +1,5 @@
 # 4 - Introdução ao compilador e vinculador
 
-::: tip
 Para compilar um programa em C++, usamos um compilador C++. O compilador percorre cada arquivo de código-fonte (.cpp) em seu programa e executa duas tarefas importantes:
 
 Primeiro, ele verifica seu código para garantir que ele siga as regras da linguagem C++. Se isso não ocorrer, o compilador fornecerá um erro (e o número da linha correspondente) para ajudar a identificar o que precisa ser corrigido. O processo de compilação também será abortado até que o erro seja corrigido.
@@ -22,5 +21,3 @@ Por exemplo,se você tem seu `main.cpp`, ele irá gerar um arquivo objeto `main.
 - Em segundo lugar, além de poder vincular arquivos de objeto, o vinculador também é capaz de vincular arquivos de biblioteca. Um arquivo de biblioteca é uma coleção de código pré-compilado que foi “empacotado” para reutilização em outros programas, como o já usado `<iostream>`.
 
 - Em terceiro lugar, o vinculador garante que todas as dependências entre arquivos sejam resolvidas corretamente. Por exemplo, se você definir algo em um arquivo .cpp e usá-lo em outro arquivo .cpp, o vinculador conectará os dois juntos. Se o vinculador não conseguir conectar uma referência a algo com sua definição, você receberá um erro de vinculador e o processo de vinculação será interrompido.
-
-::: 

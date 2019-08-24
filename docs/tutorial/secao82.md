@@ -1,6 +1,5 @@
 # 8.2 - Argumentos da função main
 
-::: tip
 Também podemos passar argumentos para a função main, como vimos ela é uma função como qualquer outra
 
 Temos várias formas de receber argumentos, mas o tipo mais utilizado é `<int argc, char *argv[]>`
@@ -61,11 +60,9 @@ int main(int argc, char **argv)
     return EXIT_SUCCESS;
 }
 ```
-:::
 
 ::: danger
 
 Dependendo de sua IDE você pode ter problemas na hora de comparar argumentos da função main, recomendamos a utilização do <a href="https://github.com/KoltesDigital/cli.cpp" target="_blank" rel="noreferrer">cli.cpp</a>
-
 
 :::

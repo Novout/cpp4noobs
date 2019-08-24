@@ -1,7 +1,5 @@
 # 2 - Um pouco de teoria
 
-::: tip
-
 A CPU de um computador é incapaz de falar em C++. O conjunto limitado de instruções que uma CPU pode entender diretamente é chamado de código de máquina (ou linguagem de máquina ou um conjunto de instruções).
 
 Aqui está uma instrução de linguagem de máquina de amostra: 101101010.
@@ -14,16 +12,11 @@ Cada conjunto de dígitos binários é interpretado pela CPU em um comando para 
 
 Para resolver as questões de legibilidade e portabilidade, novas linguagens de programação, como C, C ++, Pascal (e mais tarde, linguagens como Java, Javascript e Perl) foram desenvolvidas. Essas linguagens são chamadas de linguagens de alto nível, pois são projetadas para permitir que o programador escreva programas sem ter que se preocupar com o tipo de computador no qual o programa será executado.
 
-:::
-
 # O que é C++?
-
-::: tip
 
 C++ (pronunciado como C plus plus) foi desenvolvido por Bjarne Stroustrup no Bell Labs como uma extensão para C, começando em 1979. C++ adiciona muitos recursos à linguagem C, e pode ser considerado um "superconjunto" do C.
 
 O C++ tem uma enorme variedade de códigos, pois alem de seus códigos, pode contar com vários da linguagem C. Esta variedade possibilita a programação em alto e baixo níveis. O C++ apresenta grande flexibilidade, embora seja bom, este fato faz com que a programação seja muito mais cuidadosa para não terem erros.
 
-:::
 
 
