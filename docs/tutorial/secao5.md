@@ -10,7 +10,7 @@ Objetos podem ser nomeados ou não nomeados. Um objeto nomeado é chamado de var
 
 # Tipos
 
-- CPP é uma linguagen fortemente tipada:
+- CPP é uma linguagem fortemente tipada:
 
 | Tipos  |            Características            |             Exemplos |
 | ------ | :-----------------------------------: | -------------------: |
@@ -21,7 +21,7 @@ Objetos podem ser nomeados ou não nomeados. Um objeto nomeado é chamado de var
 | char   |               caractere               |        'c', 'A', ' ' |
 | bool   |               booleano                |          true, false |
 
-- Existem mais tipos, mas no momento vamos trabalhar apenas com estes.
+Existem mais tipos, mas no momento vamos trabalhar apenas com estes.
 
 Para criar uma variável, usamos um tipo especial de declaração chamado de definição
 
@@ -39,7 +39,7 @@ Também podemos criar a variável já com um valor,no caso o valor `5`
 ```cpp{0}
 int main ()
 {
-    int inteiro = 5;
+    int inteiro = 5; // Como vimos na tabela acima, int aceita números inteiros, então 5 poderia ser -212, 40242, etc...
 }
 ```
 
