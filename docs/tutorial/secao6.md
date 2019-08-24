@@ -141,7 +141,7 @@ int main ()
     else 
         std::cout << "Existe mais de 10 caracteres nesta string" << std::endl;
 
-    // std::string é uma classe (falaremos sobre isso futuramente) e possui funções próprias para manipular,no caso o size(), na seção de funções você irá entender este conceito.
+    // std::string é uma classe e possui funções próprias para manipular,no caso o size(), na seção de funções você irá entender este conceito.
 }
 ```
 
