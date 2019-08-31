@@ -8,7 +8,7 @@
   <h3 align="center">Tutorial de C++ da He4rt Developers</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    <strong>Este curso ainda está sendo desenvolvido.</strong>
     <br />
     <a href="https://github.com/Novout/He4rt-CPP-Tutorial"><strong>Explore a documentação »</strong></a>
     <br />
