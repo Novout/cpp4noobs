@@ -11,7 +11,7 @@ Mas temos uma forma de manipular isso:
 
 void ExibirNome(std::string nome);
 
-int main() 
+int main()
 {
     /*|--------------------------------------|
      *|                                      |
@@ -24,7 +24,7 @@ int main()
     ExibirNome(a);
 }
 
-void ExibirNome(std::string nome) 
+void ExibirNome(std::string nome)
 {
     std::cout <<"O nome e: "<< nome << std::endl;
 }
@@ -38,8 +38,7 @@ Indicar que existe uma função `ExibirNome`, sendo um `protótipo`, e apos a fu
 
 Podemos por meio do `#define` indicar algo a ser substituido antes de ser executado
 
-O que ele faz é ler todo o códico em busca do que queremos definir e após executar a compilação
-
+Antes do início da compilação, todos os nossos `#define`'s são substituidos pelos seus respectivos valores.
 
 ```cpp{0}
 #include <iostream>
@@ -50,7 +49,7 @@ O que ele faz é ler todo o códico em busca do que queremos definir e após exe
 
 void exibir_nome(std::array<std::string, ALUNOS> arr);
 
-int main() 
+int main()
 {
     /*|--------------------------------------|
      *|                                      |
@@ -67,7 +66,7 @@ int main()
     exibir_nome(nomes);
 }
 
-void exibir_nome(std::array<std::string, QNT_ALUNOS> arr) 
+void exibir_nome(std::array<std::string, QNT_ALUNOS> arr)
 {
     for(std::string &element : arr)
         std::cout << element << " ";
