@@ -9,7 +9,7 @@ Um espaço para nome define uma área de código na qual todos os identificadore
 #include <iostream>
 
 #include "a.hpp"
-#include "b.hpp
+#include "b.hpp"
 
 int A = 5;
 
@@ -53,7 +53,7 @@ Aqui está um exemplo dos cabeçalhos no primeiro exemplo reescritos usando name
 #include <iostream>
 
 #include "a.hpp"
-#include "b.hpp
+#include "b.hpp"
 
 int A = 5;
 
@@ -99,7 +99,7 @@ A primeira maneira de dizer ao compilador para procurar um identificador em um e
 #include <iostream>
 
 #include "a.hpp"
-#include "b.hpp
+#include "b.hpp"
 
 int A = 5;
 
@@ -134,6 +134,6 @@ int main(int, char**)
 }
 
 ```
-Vale ressaltar que os namespaces em C++ não foram projetados como uma maneira de implementar uma hierarquia de informações - eles foram projetados principalmente como um mecanismo para evitar colisões de nomes. Como prova disso, observe que a totalidade da biblioteca de modelos padrão reside no espaço de nome singular std ::. Algumas linguagens mais recentes (como C#) diferem do C++ nesse sentido.
+Vale ressaltar que os namespaces em C++ não foram projetados como uma maneira de implementar uma hierarquia de informações - eles foram projetados principalmente como um mecanismo para evitar colisões de nomes. Como prova disso, observe que a totalidade da biblioteca de modelos padrão reside no espaço de nome singular `std::` . Algumas linguagens mais recentes (como C#) diferem do C++ nesse sentido.
 
 Em geral, evite aninhar espaços para nome, se possível, e existem poucas boas razões para aninhar neles com mais de 2 níveis de profundidade. No entanto, nas lições posteriores, veremos outros casos relacionados em que o operador de resolução do escopo precisa ser usado mais de uma vez.
