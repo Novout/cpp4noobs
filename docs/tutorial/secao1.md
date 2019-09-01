@@ -4,9 +4,9 @@ Seção 1 - Opções e Configurando o Ambiente
 
 Primeiramente, precisamos configurar o ambiente de programação para conseguirmos começar a programar.
 
-Mas, o que seria um ambiente de programação?No caso, iremos te dar opções de IDE's.
+Mas, o que seria um ambiente de programação? No caso, iremos te dar opções de IDE's.
 
-* IDE(Ambiente de Desenvolvimento Integrado) é um programa que reúne ferramentas para ajudar o desenvolvedor.
+- IDE(Ambiente de Desenvolvimento Integrado) é um programa que reúne ferramentas para ajudar o desenvolvedor.
 
 Existe várias IDE's para C++ e iremos te dar algumas opções:
 
@@ -24,4 +24,4 @@ Existe várias IDE's para C++ e iremos te dar algumas opções:
 
 Sinta-se livre para escolher a IDE se sua preferência
 
-* Escolha a que deseja utilizar, e siga os passos da seção que corresponde a IDE.
+- Escolha a que deseja utilizar, e siga os passos da seção que corresponde a IDE.
