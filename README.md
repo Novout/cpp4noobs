@@ -125,4 +125,4 @@ Link do Projeto: [https://github.com/Novout/He4rt-CPP-Tutorial](https://github.c
 
 ## Base
 
-O tutorial tem como base o site [LearnCPP](https://www.learncpp.com), mas não diretamente uma tradução
+O tutorial tem como base os sites [LearnCPP](https://www.learncpp.com) e [cppreference](https://en.cppreference.com/w/).
