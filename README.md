@@ -122,3 +122,7 @@ Thiago Rezende - [@HorusHe4rt](https://twitter.com/HorusHe4rt) - bitrateti@gmail
 Giovane Cardoso - [@NovoutT](https://twitter.com/NovoutT)
 
 Link do Projeto: [https://github.com/Novout/He4rt-CPP-Tutorial](https://github.com/Novout/He4rt-CPP-Tutorial)
+
+## Base
+
+O tutorial tem como base o site [LearnCPP](https://www.learncpp.com), mas não diretamente uma tradução
