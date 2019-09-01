@@ -19,7 +19,6 @@ module.exports = {
         "secao5",
         "secao51",
         "secao52",
-        "secao53",
         "secao6",
         "secao61",
         "secao62",
