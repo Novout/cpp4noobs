@@ -77,7 +77,7 @@ int main()
 }
 ```
 
-Quando o pré-processador processa a linha #include `media.h`, ele copia o conteúdo de media.h no arquivo atual naquele momento. Como nosso add.h contém uma declaração direta para a função add, essa declaração direta será copiada para main.cpp. O resultado final é um programa funcionalmente igual ao em que adicionamos manualmente a declaração de encaminhamento no topo do arquivo main.cpp.
+Quando o pré-processador processa a linha #include `media.hpp`, ele copia o conteúdo de media.h no arquivo atual naquele momento. Como nosso `media.hpp` contém uma declaração direta para a função `media`, essa declaração direta será copiada para main.cpp. O resultado final é um programa funcionalmente igual ao em que adicionamos manualmente a declaração de encaminhamento no topo do arquivo main.cpp.
 
 Consequentemente, nosso programa será compilado e vinculado corretamente.
 

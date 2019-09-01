@@ -5,10 +5,10 @@ actionText: Inicie Agora →
 actionLink: /tutorial/
 features:
 - title: Completo
-  details: Buscamos com esse tutorial trazer conteúdo completo da linguagem C++, com seções bem detalhadas.
+  details: Nosso tutorial tem como objetivo oferecer desde o básico ao avançado da linguagem C++
 - title: Didática
-  details: Buscamos uma forma menos formal para tentar melhorar a curva de aprendizado
+  details: Buscamos uma didática interativa e direta buscando uma curva de aprendizado exponencial.
 - title: Prática
-  details: Disponibilizamos exemplos para mostrar o que cada conteúdo poderá ser útil em seu códico.
+  details: Temos vários exemplos em cada seção para estimular a criatividade do leitor e permitir aplicar os conceitos mostrados.
 footer: MIT Licensed | Copyright © 2019-present He4rt Developers
 ---

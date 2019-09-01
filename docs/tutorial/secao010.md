@@ -46,7 +46,7 @@ int soma(int a, int b, int c)
 
 A variável global `A` e a função `soma()` são definidas no espaço para nome global.
 
-No programa de exemplo acima que teve a colisão de nomenclatura, quando main.cpp # incluiu a.h e b.h, as duas versões de soma () foram incluídas no espaço de nomes global, motivo pelo qual a colisão de nomenclatura resultou.
+No programa de exemplo acima que teve a colisão de nomenclatura, quando main.cpp # incluiu a.hpp e b.hpp, as duas versões de soma () foram incluídas no espaço de nomes global, motivo pelo qual a colisão de nomenclatura resultou.
 
 Para ajudar a evitar problemas nos quais dois trechos de código independentes têm colisões de nomes entre si quando usados juntos, o C++ nos permite declarar nossos próprios namespaces por meio da palavra-chave namespace. Qualquer coisa declarada dentro de um espaço para nome definido pelo usuário pertence a esse espaço para nome, não ao espaço para nome global.
 
@@ -98,9 +98,9 @@ int soma(int a, int b, int c)
 }
 ```
 
-O que aconteceu foi que, quando tentamos chamar a função soma(), o compilador procurou no espaço de nomes global para ver se poderia encontrar uma definição de soma (). No entanto, como nenhuma das nossas funções soma () vive mais no espaço de nomes global, ele considerou a função soma() do escopo global!
+O que aconteceu foi que, quando tentamos chamar a função soma(), o compilador procurou no espaço de nomes global para ver se poderia encontrar uma definição de soma(). No entanto, como nenhuma das nossas funções soma() vive mais no espaço de nomes global, ele considerou a função soma() do escopo global!
 
-A primeira maneira de dizer ao compilador para procurar um identificador em um espaço de nome específico é usar o operador de resolução de escopo (: :). Esse operador permite prefixar um nome de identificador com o espaço para nome que você deseja usar.
+A primeira maneira de dizer ao compilador para procurar um identificador em um espaço de nome específico é usar o operador de resolução de escopo. Esse operador permite prefixar um nome de identificador com o espaço para nome que você deseja usar.
 
 ```cpp{0}
 #include <iostream>
