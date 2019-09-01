@@ -1,14 +1,19 @@
 # 8.4 - Funções Lambda
 
-Funções lambda foram implementadas no C++11 e versões posteriores, onde podemos declarar objetos de funções em forma anônima, podendo ser utilizada em contextos assíncronos.
+Funções lambda foram implementadas no C++11 e versões posteriores, onde podemos declarar objetos de funções em forma anônima, normalmente utilizadas quando precisamos de uma função que não precisará existir após ser utilizada.
 
 Sintaxe:
+`[]() -> T {}`
 
-`[]() {};`
+CAPTURAS `[]` <br/>
+PARÂMETROS `()` <br/>
+TIPO DO RETORNO `-> T` <br/>
+CORPO DA FUNÇÃO `{}`
 
-Chamamos uma função lambda como: `nome_variavel()`
+Chamamos uma função lambda da mesma forma que chamamos uma função normal: `nome_variavel()`
 
 Exemplo:
+
 ```cpp{0}
 #include <iostream>
 #include <cstdlib>
@@ -24,10 +29,7 @@ int main(int argc, const char **argv)
 
     int a(3), b(5);
 
-    /* auto significa irá idenficar o que se retorna ou o que é associavel
-     * neste caso precisamos utilizar auto,pois soma se associa com: class lambda[] int (int n1, int n2) -> int
-     * Iremos ter uma seção específica apenas para a keyword auto, não se preocupe com isso.
-     */
+    /* Quando criamos uma lambda, precisamos usar 'auto', pois o tipo de cada função é único. */
 
     auto soma = [](int n1, int n2) {
         return n1 + n2;
@@ -48,7 +50,7 @@ auto func()
 }
 ```
 
-Também podemos fazer lambda localmente para executar um determinado procedimento
+Também podemos criar lambdas que são executadas imediatamente. Esse tipo de função é conhecido como IILE(Immediately Invoked Lambda Expression) ou IIFE(Immediately Invoked Function Expression)
 
 Exemplos:
 
@@ -56,7 +58,7 @@ Exemplos:
 #include <iostream>
 #include <cstdlib>
 
-int main(int argc,const char **argv) 
+int main(int argc,const char **argv)
 {
   /*|--------------------------------------|
    *|                                      |
@@ -70,11 +72,12 @@ int main(int argc,const char **argv)
     return EXIT_SUCCESS;
 }
 ```
+
 ```cpp{0}
 #include <iostream>
 #include <cstdlib>
 
-int main() 
+int main()
 {
     /*|--------------------------------------|
      *|                                      |
