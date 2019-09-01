@@ -124,7 +124,7 @@ namespace A
 {
 namespace B 
 {
-    auto soma = [](int a, int b){ return a + b;};
+    auto soma = [](int a, int b) { return a + b; };
 }
 }
 
