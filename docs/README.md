@@ -2,7 +2,7 @@
 home: true
 heroImage: /images/he4rtlogo.png
 actionText: Inicie Agora →
-actionLink: /initial/
+actionLink: /tutorial/
 features:
 - title: Completo
   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis ut felis vitae tincidunt. Donec in dapibus tortor. Nam finibus quis nisl quis viverra.
