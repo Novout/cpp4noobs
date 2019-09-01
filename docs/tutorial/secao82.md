@@ -7,7 +7,7 @@ Temos várias formas de receber argumentos, mas o tipo mais utilizado é `<int a
 ```cpp{0}
 #include <iostream>
 
-int main(int argc,char *argv[]) 
+int main(int argc,char *argv[])
 {
     /*|--------------------------------------|
      *|                                      |
@@ -31,13 +31,13 @@ Para passar argumentos para ela, precisa abrir o .exe pelo cmd, e na sua frente 
 
 `nome_do_programa.exe argumento1 argumento2 ...`
 
-Assim podemos modificar a forma de execução do nosso códico
+Assim podemos modificar a forma de execução do nosso código
 
 ```cpp{0}
 #include <iostream>
 #include <cstdlib>
 
-int main(int argc, char **argv) 
+int main(int argc, char **argv)
 {
     /*|--------------------------------------|
      *|                                      |
@@ -52,7 +52,7 @@ int main(int argc, char **argv)
     {
         std::cout << (a + b) << std::endl;
     }
-    else 
+    else
     {
         std::cout << a << " " << b << std::endl;
     }
