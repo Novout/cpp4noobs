@@ -89,7 +89,7 @@ std::unique_ptr</br>
 std::shared_ptr</br>
 std::weak_ptr
 
-Para usá-los precisamos incluir o header \<memory\>
+Para usá-los precisamos incluir o header `<memory>`
 
 Usando std::unique_ptr
 
