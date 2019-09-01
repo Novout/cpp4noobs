@@ -5,10 +5,10 @@ actionText: Inicie Agora →
 actionLink: /tutorial/
 features:
 - title: Completo
-  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis ut felis vitae tincidunt. Donec in dapibus tortor. Nam finibus quis nisl quis viverra.
+  details: Buscamos com esse tutorial trazer conteúdo completo da linguagem C++, com seções bem detalhadas.
 - title: Didática
-  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis ut felis vitae tincidunt. Donec in dapibus tortor. Nam finibus quis nisl quis viverra.
+  details: Buscamos uma forma menos formal para tentar melhorar a curva de aprendizado
 - title: Prática
-  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis ut felis vitae tincidunt. Donec in dapibus tortor. Nam finibus quis nisl quis viverra.
+  details: Disponibilizamos exemplos para mostrar o que cada conteúdo poderá ser útil em seu códico.
 footer: MIT Licensed | Copyright © 2019-present He4rt Developers
 ---
