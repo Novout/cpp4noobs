@@ -1,6 +1,6 @@
 # 11 - Introdução a Ponteiros
 
-Na seção 5, vimos que uma variável é um nome para um espaço de memória que contem um valor. quando nosso programa instancia uma variável, um endereço de memória livre eh automaticamente interligado a variável, e qualquer valor que definimos para a variavel eh armazenado nesse endereço de memória.
+Na seção 5, vimos que uma variável é um nome para um espaço de memória que contem um valor. Quando nosso programa instancia uma variável, um endereço de memória livre é automaticamente interligado a variável, e qualquer valor que definimos para a variavel é armazenado nesse endereço de memória.
 
 Por exemplo:
 
@@ -37,6 +37,8 @@ O programa acima imprimiu:
 5
 0027FEA0
 ```
+
+O endereço de uma variável nao é obrigado a ser o mesmo em todas as máquinas.
 
 ## Operador de de-referência - (\*)
 
@@ -128,7 +130,7 @@ std::cout << &value; // exibe o endereco de value
 std::cout << value; // exibe o conteudo
 
 int *ptr = &value; // ptr aponta para value
-std::cout << ptr; // exibe o conteudo de ptr, que eh o endereco de value
+std::cout << ptr; // exibe o conteudo de ptr, que é o endereco de value
 std::cout << *ptr; // de-referência ptr, retornando o valor contido no endereco
 ```
 
