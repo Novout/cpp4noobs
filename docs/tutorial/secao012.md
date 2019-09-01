@@ -5,7 +5,7 @@ Nos capítulos anteriores, você aprendeu a escrever funções que ajudam a torn
 Por exemplo, digamos que você queira escrever uma função para calcular a multiplicação de dois números. Você pode fazer assim:
 
 ```cpp{0}
-#include<iostream> 
+#include <iostream> 
 
 int multiplicacao(int a, int b) 
 { 
