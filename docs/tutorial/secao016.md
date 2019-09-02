@@ -12,7 +12,7 @@ O tipo dos elementos que uma struct contem não precisam ser o mesmo.
 
 `struct NOME_DA_STRUCT { };`
 
-```cpp
+```cpp{0}
 #include <iostream>
 #include <string>
 
@@ -36,7 +36,7 @@ int main()
 
 Structs podem conter funções, além de variáveis.
 
-```cpp
+```cpp{0}
 #include <iostream>
 #include <string>
 
@@ -65,7 +65,7 @@ O construtor é uma função normal, exceto pelo fato de que não tem um tipo de
 
 Quando acessamos uma variável de uma struct, dentro dela mesmo, podemos usar `this` para deixar explicito que a quem tal variável pertence. Isso não é necessário na maioria dos casos, a não ser por preferência ou por um caso onde existe ambiguidade.
 
-```cpp
+```cpp{0}
 #include <iostream>
 #include <string>
 
@@ -100,7 +100,7 @@ Caso nenhum construtor seja declarado, o compilador irá criar um construtor vaz
 
 Por exemplo:
 
-```cpp
+```cpp{0}
 #include <iostream>
 #include <string>
 
@@ -124,7 +124,7 @@ int main()
 
 Podemos ter mais de um construtor, com cada um deles fazendo uma coisa diferente.
 
-```cpp
+```cpp{0}
 #include <iostream>
 #include <string>
 
