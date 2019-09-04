@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/He4rt-CPP-Tutorial/',
+  base: "/He4rt-CPP-Tutorial/",
   title: "Curso de CPP da He4rt Developers",
   description: "C++",
   themeConfig: {
@@ -42,6 +42,7 @@ module.exports = {
         "secao013",
         "secao014",
         "secao015",
+        "secao0151",
         "secao016"
       ]
     }
