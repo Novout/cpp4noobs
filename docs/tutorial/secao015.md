@@ -21,7 +21,7 @@ bool is_even(int number)
 
 bool is_first_element_even(std::vector<int> const& array)
 {
-  return array[0] % 2 == 0;
+  return is_even(array[0]);
 }
 
 int main()
