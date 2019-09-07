@@ -11,7 +11,7 @@ Dizemos que uma operação leva tempo constante quando independente do input, el
 ```cpp
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <numeric>
 
 /* Testa se um número é par */
 bool is_even(int number)
