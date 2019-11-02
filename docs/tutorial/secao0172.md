@@ -12,7 +12,7 @@ private:
     double m_largura{ 1.0 }; 
  
 public:
-    Rectangle()
+    Retangulo()
     {
         // O Construtor padrão ira inicializar com os valores colocar acima nas variaveis
     }
