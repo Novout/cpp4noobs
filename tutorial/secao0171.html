@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>17.1 - Classes | Curso de CPP da He4rt Developers</title>
+    <meta name="description" content="C++">
+    
+    
+    <link rel="preload" href="/He4rt-CPP-Tutorial/assets/css/0.styles.a8c8326b.css" as="style"><link rel="preload" href="/He4rt-CPP-Tutorial/assets/js/app.e5379324.js" as="script"><link rel="preload" href="/He4rt-CPP-Tutorial/assets/js/2.aa29e6d7.js" as="script"><link rel="preload" href="/He4rt-CPP-Tutorial/assets/js/23.a0659c89.js" as="script"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/10.236d974d.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/11.1298ce6f.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/12.bfaf5e2f.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/13.a884a2a2.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/14.d5968db6.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/15.560e4ec4.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/16.2e1e59f4.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/17.f0b24d6b.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/18.54393ad2.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/19.625910d6.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/20.4c9c0ce1.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/21.03dff5d9.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/22.248af814.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/24.ed74082d.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/25.780a2414.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/26.dfd74bc2.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/27.a0c3f595.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/28.9326615e.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/29.ca0e5392.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/3.5bf51bfe.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/30.c211f791.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/31.1af3576d.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/32.5c01d251.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/33.90884e11.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/34.48f72c67.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/35.d7c907d6.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/36.913b7b9f.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/37.9cf861b5.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/38.e0348818.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/39.f0ff2020.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/4.8a2552fa.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/40.043eca20.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/41.3286570e.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/42.695571dc.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/43.3836b868.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/44.7fe25886.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/45.29e7bc08.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/5.59cc985c.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/6.fd7884ca.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/7.9167adb5.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/8.429ea3f1.js"><link rel="prefetch" href="/He4rt-CPP-Tutorial/assets/js/9.3b57668f.js">
+    <link rel="stylesheet" href="/He4rt-CPP-Tutorial/assets/css/0.styles.a8c8326b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/He4rt-CPP-Tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Curso de CPP da He4rt Developers</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/He4rt-CPP-Tutorial/" class="nav-link">Home</a></div><div class="nav-item"><a href="/He4rt-CPP-Tutorial/tutorial/" class="nav-link router-link-active">Tutorial</a></div><div class="nav-item"><a href="https://twitter.com/He4rtDevs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  He4rt
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/He4rt-CPP-Tutorial/" class="nav-link">Home</a></div><div class="nav-item"><a href="/He4rt-CPP-Tutorial/tutorial/" class="nav-link router-link-active">Tutorial</a></div><div class="nav-item"><a href="https://twitter.com/He4rtDevs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  He4rt
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/He4rt-CPP-Tutorial/tutorial/" class="sidebar-link">0 - Bem-Vindo ao Tutorial!</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao1.html" class="sidebar-link">1 - Configurando o Ambiente</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao11.html" class="sidebar-link">1.1 - Instalando o Falcon C++</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao2.html" class="sidebar-link">2 - Um pouco de teoria</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao3.html" class="sidebar-link">3 - Primeiro Hello World</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao31.html" class="sidebar-link">3.1 - Lista de Exercícios</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao4.html" class="sidebar-link">4 - Introdução ao compilador e vinculador</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao5.html" class="sidebar-link">5 - Variáveis</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao51.html" class="sidebar-link">5.1 - Operações Matemáticas</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao52.html" class="sidebar-link">5.2 - std::string</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao6.html" class="sidebar-link">6 - Condições</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao61.html" class="sidebar-link">6.1 - Loops</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao62.html" class="sidebar-link">6.2 - Teste de Mesa</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao7.html" class="sidebar-link">7 - Vetores (C Arrays)</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao71.html" class="sidebar-link">7.1 - std::array e std::vector</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao72.html" class="sidebar-link">7.2 - Matrizes</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao8.html" class="sidebar-link">8 - Funções</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao81.html" class="sidebar-link">8.1 - Protótipo de Função</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao82.html" class="sidebar-link">8.2 - Argumentos da função main</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao83.html" class="sidebar-link">8.3 - Recursão</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao84.html" class="sidebar-link">8.4 - Funções Lambda</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao85.html" class="sidebar-link">8.5 - Keyword Static</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao9.html" class="sidebar-link">9 - Header</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao91.html" class="sidebar-link">9.1 - Protetores de Cabeçalho</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao010.html" class="sidebar-link">10 - Namespace</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao011.html" class="sidebar-link">11 - Introdução a Ponteiros</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao0111.html" class="sidebar-link">11.1 - Referências</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao0112.html" class="sidebar-link">11.2 - Smart Pointers</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao012.html" class="sidebar-link">12 - Structs</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao013.html" class="sidebar-link">13 - Templates</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao0131.html" class="sidebar-link">13.1 - Instâncias de Modelo de Função</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao014.html" class="sidebar-link">14 - Stack e Heap</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao015.html" class="sidebar-link">15 - Auto Keyword</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao016.html" class="sidebar-link">16 - Big O Notation</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao0161.html" class="sidebar-link">16.1 - Sorting</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao017.html" class="sidebar-link">17 - Orientação a Objetos (OOP)</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao0171.html" class="active sidebar-link">17.1 - Classes</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao0172.html" class="sidebar-link">17.2 - Inicialização de Construtores</a></li><li><a href="/He4rt-CPP-Tutorial/tutorial/secao0173.html" class="sidebar-link">17.3 - Classes no Header</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_17-1-classes"><a href="#_17-1-classes" aria-hidden="true" class="header-anchor">#</a> 17.1 - Classes</h1> <p>Embora o C ++ forneça vários tipos de dados fundamentais (por exemplo, char, int, long, float, double, etc ...) que geralmente são suficientes para resolver problemas relativamente simples, pode ser difícil resolver problemas complexos usando apenas esses tipos. Um dos recursos mais úteis do C ++ é a capacidade de definir seus próprios tipos de dados que melhor correspondem ao problema que está sendo resolvido. Você já viu como tipos e estruturas enumerados podem ser usados para criar seus próprios tipos de dados personalizados.</p> <p>No mundo da programação orientada a objetos, geralmente queremos que nossos tipos não apenas mantenham dados, mas também forneçam funções que funcionem com os dados. Em C ++, isso geralmente é feito através da palavra-chave da classe. O uso da palavra-chave class define um novo tipo definido pelo usuário chamado class.</p> <p>No C ++, classes e estruturas são essencialmente as mesmas. De fato, a seguinte estrutura e classe são efetivamente idênticas:</p> <div class="language-cpp extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-cpp"><code><span class="token keyword">struct</span> <span class="token class-name">FuncionarioStruct</span>
+<span class="token punctuation">{</span>
+    std<span class="token operator">::</span>string m_nome<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> m_idade<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">class</span> <span class="token class-name">FuncionarioClasse</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    std<span class="token operator">::</span>string m_nome<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> m_idade<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h1 id="keyword-public-protected-e-private"><a href="#keyword-public-protected-e-private" aria-hidden="true" class="header-anchor">#</a> Keyword public, protected e private</h1> <p>Note a utilização do <code>public</code>, quer dizer que tanto membros da classe(ou seja, funções que estão dentro da classe) e membros externos podem acessar esta variável.</p> <p>Por exemplo:</p> <div class="language-cpp extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-cpp"><code><span class="token keyword">struct</span> <span class="token class-name">FuncionarioStruct</span>
+<span class="token punctuation">{</span>
+    std<span class="token operator">::</span>string m_nome<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> m_idade<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token punctuation">{</span>
+  FuncionarioStruct f<span class="token punctuation">;</span>
+  f<span class="token punctuation">.</span>m_nome <span class="token operator">=</span> <span class="token string">&quot;João&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>É possivel modificar diretamente o nome pois struct's não possuem keyword de acesso, e por padrão utilizam <code>public</code></p> <h1 id="setters-e-getters"><a href="#setters-e-getters" aria-hidden="true" class="header-anchor">#</a> Setters e Getters</h1> <p>Então para acessar uma variável privada, precisamos de funções na classe para alterar ou retornar esses valores,dando o exemplo:</p> <div class="language-cpp extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-cpp"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;memory&gt;</span></span>
+
+<span class="token comment">// Requer flag de C++17</span>
+
+<span class="token keyword">namespace</span> FUNCIONARIO <span class="token comment">// Namespace que irá conter a classe Atendente</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">class</span> <span class="token class-name">Atendente</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">private</span><span class="token operator">:</span> <span class="token comment">// Keyword private</span>
+    std<span class="token operator">::</span>string m_nome<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span><span class="token operator">:</span>                          <span class="token comment">// Keyword public</span>
+    <span class="token function">Atendente</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string nNome<span class="token punctuation">)</span> <span class="token comment">// Construtor da classe, recebendo um parâmetro nNome</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome <span class="token operator">=</span> nNome<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token operator">~</span><span class="token function">Atendente</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Destrutor da Classe</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">setNome</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string nNome<span class="token punctuation">)</span> <span class="token comment">// Setter do nome</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome <span class="token operator">=</span> nNome<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> std<span class="token operator">::</span>string <span class="token function">getNome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token comment">// Getter do nome</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">// namespace FUNCIONARIO</span>
+
+<span class="token keyword">auto</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token keyword">int</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">auto</span> ul <span class="token operator">=</span> std<span class="token operator">::</span>make_unique<span class="token operator">&lt;</span>FUNCIONARIO<span class="token operator">::</span>Atendente<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string">&quot;Jose&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Instanciação da classe Atendente</span>
+
+    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> ul<span class="token operator">-&gt;</span><span class="token function">getNome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span> <span class="token comment">// Exibe Jose</span>
+
+    ul<span class="token operator">-&gt;</span><span class="token function">setNome</span><span class="token punctuation">(</span><span class="token string">&quot;Claudio&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Seta o m_nome Claudio</span>
+
+    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> ul<span class="token operator">-&gt;</span><span class="token function">getNome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span> <span class="token comment">// Exibe Claudio</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Demos um exemplo de utilização de namespace, agrupando outras variantes de funcionarios possíveis.</p> <p>Mas, várias classes diferentes de tipos de funcionário terão atributos parecidos e terá uma repetição de código.</p> <p>Para isso, podemos <code>herdar</code> classes para evitar repetição.</p> <p>A keyword <code>protected</code> serve para esse caso, pois classes filhas, ou seja, que herdam de uma classe mãe podem acessar seus métodos, mas ainda sim conteúdos de fora não podem acessar seus métodos.</p> <p>Exemplo:</p> <div class="language-cpp extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Funcionario</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">protected</span><span class="token operator">:</span> <span class="token comment">// Keyword private</span>
+    std<span class="token operator">::</span>string m_nome<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span><span class="token operator">:</span>                            <span class="token comment">// Keyword public</span>
+    <span class="token function">Funcionario</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string nNome<span class="token punctuation">)</span> <span class="token comment">// Construtor da classe, recebendo um parâmetro nNome</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome <span class="token operator">=</span> nNome<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">Funcionario</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token operator">~</span><span class="token function">Funcionario</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Destrutor da Classe</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">setNome</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string nNome<span class="token punctuation">)</span> <span class="token comment">// Setter do nome</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome <span class="token operator">=</span> nNome<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> std<span class="token operator">::</span>string <span class="token function">getNome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token comment">// Getter do nome</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Atendente</span> <span class="token operator">:</span> <span class="token keyword">public</span> Funcionario <span class="token comment">// Herdando funcionario</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">private</span><span class="token operator">:</span> <span class="token comment">// Keyword private</span>
+    std<span class="token operator">::</span>string m_turno<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span><span class="token operator">:</span>                                              <span class="token comment">// Keyword public</span>
+    <span class="token function">Atendente</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string nNome<span class="token punctuation">,</span> std<span class="token operator">::</span>string nTurno<span class="token punctuation">)</span> <span class="token comment">// Construtor da classe, recebendo um parâmetro nNome</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_nome <span class="token operator">=</span> nNome<span class="token punctuation">;</span> <span class="token comment">// Se m_nome fosse privado, teria que utilizar typedef</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_turno <span class="token operator">=</span> m_turno<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token operator">~</span><span class="token function">Atendente</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Destrutor da Classe</span>
+    <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">setTurno</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string nTurno<span class="token punctuation">)</span> <span class="token comment">// Setter do turno</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_turno <span class="token operator">=</span> nTurno<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> std<span class="token operator">::</span>string <span class="token function">getTurno</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token comment">// Getter do turno</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token operator">-&gt;</span>m_turno<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// namespace FUNCIONARIO</span>
+
+<span class="token keyword">auto</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token keyword">int</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">auto</span> ul <span class="token operator">=</span> std<span class="token operator">::</span>make_unique<span class="token operator">&lt;</span>Atendente<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string">&quot;Jose&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tarde&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> ul<span class="token operator">-&gt;</span><span class="token function">getNome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span> <span class="token comment">// Exibe Jose</span>
+
+    ul<span class="token operator">-&gt;</span><span class="token function">setTurno</span><span class="token punctuation">(</span><span class="token string">&quot;Noite&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Seta o turno Noite</span>
+
+    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> ul<span class="token operator">-&gt;</span><span class="token function">getTurno</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span> <span class="token comment">// Exibe Noite</span>
+
+    <span class="token keyword">return</span> EXIT_SUCCESS<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Getters e Setters possuem padronização, da mesma forma mostrado anteriormente:</p> <div class="language-cpp extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Date</span>
+<span class="token punctuation">{</span>
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> m_month<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> m_day<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> m_year<span class="token punctuation">;</span>
+ 
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> m_month<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// getter do mes</span>
+    <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token function">setMonth</span><span class="token punctuation">(</span><span class="token keyword">int</span> month<span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span> m_month <span class="token operator">=</span> month<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// setter do mes</span>
+ 
+    <span class="token keyword">int</span> <span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> m_day<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// getter do dia</span>
+    <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token function">setDay</span><span class="token punctuation">(</span><span class="token keyword">int</span> day<span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span> m_day <span class="token operator">=</span> day<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// setter do dia</span>
+ 
+    <span class="token keyword">int</span> <span class="token function">getYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> m_year<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// getter do ano</span>
+    <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token function">setYear</span><span class="token punctuation">(</span><span class="token keyword">int</span> year<span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span> m_year <span class="token operator">=</span> year<span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// setter do ano</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>Os getters devem fornecer acesso &quot;somente leitura&quot; aos dados. Portanto, a melhor prática é que eles retornem por valor ou referência const (não por referência não const). Um getter que retorna uma referência não-const permitiria ao chamador modificar o objeto real que está sendo referenciado, o que viola a natureza somente leitura do getter (e viola o encapsulamento).</p> <p>Prática recomendada: Getters devem retornar por valor ou referência const</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/He4rt-CPP-Tutorial/tutorial/secao017.html" class="prev">
+          17 - Orientação a Objetos (OOP)
+        </a></span> <span class="next"><a href="/He4rt-CPP-Tutorial/tutorial/secao0172.html">
+          17.2 - Inicialização de Construtores
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/He4rt-CPP-Tutorial/assets/js/app.e5379324.js" defer></script><script src="/He4rt-CPP-Tutorial/assets/js/2.aa29e6d7.js" defer></script><script src="/He4rt-CPP-Tutorial/assets/js/23.a0659c89.js" defer></script>
+  </body>
+</html>
