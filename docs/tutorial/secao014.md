@@ -58,7 +58,7 @@ Uma estrutura de dados é um mecanismo de programação para organizar dados, pa
 
 # O segmento da stack de chamadas
 
-O segmento da pilha de chamadas mantém a memória usada para a pilha de chamadas. Quando o aplicativo é iniciado, a função main () é pressionada na pilha de chamadas pelo sistema operacional. Então o programa começa a executar.
+O segmento da pilha de chamadas mantém a memória usada para a pilha de chamadas. Quando a aplicação é iniciada, a função main () é pressionada na pilha de chamadas pelo sistema operacional. Então o programa começa a executar.
 
 Quando uma chamada de função é encontrada, a função é enviada para a pilha de chamadas. Quando a função atual termina, essa função é retirada da pilha de chamadas. Assim, observando as funções pressionadas na pilha de chamadas, podemos ver todas as funções que foram chamadas para chegar ao ponto de execução atual.
 
@@ -70,21 +70,22 @@ A única diferença entre nossa pilha hipotética de caixa de correio e a pilha 
 
 Vamos examinar mais detalhadamente como a pilha de chamadas funciona. Aqui está a sequência de etapas que ocorre quando uma função é chamada:
 
-O programa encontra uma chamada de função.
-Um quadro de pilha é construído e empurrado na pilha. O quadro da pilha consiste em:
-O endereço da instrução além da chamada da função (chamado endereço de retorno). É assim que a CPU se lembra para onde retornar após a saída da função chamada.
-Todos os argumentos da função.
-Memória para quaisquer variáveis ​​locais.
-Cópias salvas de quaisquer registros modificados pela função que precisam ser restauradas quando a função retornar
-A CPU pula para o ponto inicial da função.
-As instruções dentro da função começam a ser executadas.
+- O programa encontra uma chamada de função.
+- Um quadro de pilha é construído e empurrado na pilha. O quadro da pilha consiste em:
+- O endereço da instrução além da chamada da função (chamado endereço de retorno). É assim que a CPU se lembra para onde retornar após a saída da função chamada.
+- Todos os argumentos da função.
+- Memória para quaisquer variáveis ​​locais.
+- Cópias salvas de quaisquer registros modificados pela função que precisam ser restauradas quando a função retornar
+- A CPU pula para o ponto inicial da função.
+- As instruções dentro da função começam a ser executadas.
+
 Quando a função termina, ocorrem as seguintes etapas:
 
-Os registros são restaurados da pilha de chamadas
-O quadro da pilha é retirado da pilha. Isso libera a memória para todas as variáveis ​​e argumentos locais.
-O valor de retorno é tratado.
-A CPU retoma a execução no endereço de retorno.
-Os valores de retorno podem ser manipulados de várias maneiras diferentes, dependendo da arquitetura do computador. Algumas arquiteturas incluem o valor de retorno como parte do quadro da pilha. Outros usam registradores de CPU.
+- Os registros são restaurados da pilha de chamadas
+- O quadro da pilha é retirado da pilha. Isso libera a memória para todas as variáveis ​​e argumentos locais.
+- O valor de retorno é tratado.
+- A CPU retoma a execução no endereço de retorno.
+- Os valores de retorno podem ser manipulados de várias maneiras diferentes, dependendo da arquitetura do computador. Algumas arquiteturas incluem o valor de retorno como parte do quadro da pilha. Outros usam registradores de CPU.
 
 Normalmente, não é importante conhecer todos os detalhes sobre como a pilha de chamadas funciona. No entanto, o entendimento de que as funções são efetivamente colocadas na pilha quando são chamadas e ativadas quando retornam fornece os fundamentos necessários para entender a recursão, além de alguns outros conceitos úteis na depuração.
 
@@ -123,7 +124,7 @@ Aqui está um exemplo de programa que provavelmente causará um estouro de pilha
 int main()
 {
     int stack[10000000];
-    std::cout << "hi";
+    std::cout << "He4rt Developers" << std::endl;
     return 0;
 }
 ```

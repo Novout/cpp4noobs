@@ -72,7 +72,6 @@ int main()
 
   delete funcionario1;
   delete funcionario2;
-  delete maior_idade;
 }
 ```
 
