@@ -1,166 +1,171 @@
-# 16 - Structs
+# 16 - Big O Notation
 
-Uma struct é um tipo que pode conter zero ou mais variáveis que são alocadas de uma forma ordenada.
+Big O Notation é uma forma de classificar algoritmos baseado na relação entre o tamanho de um input e o tempo que uma ação baseada nesse input leva para ser executada.
 
-O tamanho de uma struct depende do tamanho dos elementos que ela contem.
+Big O Notation não é exato, e o tempo que um algoritmo ou programa leva para ser executado, depende de vários fatores. Apesar disso, pode ser útil para entender por que algumas soluções são naturalmente mais lentas que outras, e para aproximar a performance de um algoritmo de forma rápida.
 
-Normalmente o tamanho será o tamanho do maior elemento em bytes \* o número de elementos.
+# Tempo constante O(1)
 
-Usamos structs para agrupar valores ou para representar uma entidade.
+Dizemos que uma operação leva tempo constante quando independente do input, ela leva a mesma quantidade de tempo ou a diferença não é grande o suficiente para importar.
 
-O tipo dos elementos que uma struct contem não precisam ser o mesmo.
-
-`struct NOME_DA_STRUCT { };`
-
-```cpp{0}
+```cpp
 #include <iostream>
-#include <string>
+#include <vector>
+#include <numeric>
 
-struct Pessoa {
-  std::string nome;
-  int idade;
-};
+/* Testa se um número é par */
+bool is_even(int number)
+{
+  return number % 2 == 0;
+}
+
+bool is_first_element_even(std::vector<int> const& array)
+{
+  return is_even(array[0]);
+}
 
 int main()
 {
-  /* Variáveis são declaradas da mesma forma que com tipos primitivos */
-  Pessoa pessoa;
+  std::cout << std::boolalpha << is_even(2) << '\n'; // true
+  std::cout << std::boolalpha << is_even(9) << '\n'; // false
+  std::cout << std::boolalpha << is_even(1000000) << '\n'; // true
+  std::cout << std::boolalpha << is_even(-482717) << '\n'; // false
+  std::cout << std::boolalpha << is_even(33) << '\n'; // false
+  // Descobrir se um número é par leva tempo constante
 
-  /* Usamos . para acessar coisas que estão dentro de uma struct */
-  pessoa.nome = "John doe";
-  pessoa.idade = 30;
+  std::vector<int> array(100);
+  std::iota(array.begin(), array.end(), 1);
+  is_first_element_even(array);
 
-  std::cout << "A idade de " << pessoa.nome << " e " << pessoa.idade;
+  /*
+   * Descobrir se o primeiro elemento do array é par leva tempo constante
+   * já que a função não executa nenhuma operação relacionada com o tamanho do array.
+  */
 }
 ```
 
-Structs podem conter funções, além de variáveis.
+# Tempo logaritmico O(log n)
 
-```cpp{0}
-#include <iostream>
-#include <string>
+Um exemplo de um algoritmo que leva O(log n) é binary search.
 
-struct Pessoa {
-  std::string nome;
-  int idade;
+```cpp
+int binary_search(std::vector<int> const &array, int start, int end, int element)
+{
+  if (end >= start)
+  {
+    int mid = start + (end - start) / 2;
 
-  void apresentar() {
-    std::cout << "Meu nome e " << nome << " e tenho " << idade << " anos";
+    if (array[mid] == element)
+      return mid; // retorna a index caso o elemento seja encontrado
+
+    if (array[mid] > element)
+      return binary_search(array, start, mid - 1, element);
+    /** Chama a função enquanto o elemento não for encontrado e
+      * a condição parada não for atingida
+    **/
+
+    return binary_search(array, mid + 1, end, element);
   }
-};
+
+  return -1; // -1 caso não encontre o elemento
+}
+```
+
+Esse algoritmo leva O(log n) por que a cada chamada da função binary_search, o campo de busca é cortado pela metade.
+
+# Tempo linear O(n)
+
+Em um algoritmo O(n) o tempo de execução aumenta de forma idêntica ao tamanho do input, ou seja, de forma linear.
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+/**
+  * O tempo necessário para somar todos os elementos do array depende do tamanho do array.
+  * Sendo assim, conforme o tamanho do array cresce,
+  * o tempo de execução da função também cresce.
+  * Por esse motivo, o tempo de execução de sum_elements() pode ser considerado O(n)
+*/
+int sum_elements(std::vector<int> const& array) {
+  int sum = 0;
+
+  for(int element: array){
+    sum += element;
+  }
+
+  return sum;
+}
 
 int main()
 {
-  Pessoa pessoa;
-  pessoa.nome = "John doe";
-  pessoa.idade = 30;
+  std::vector<int> array(100);
+  std::iota(array.begin(), array.end(), 1); // prenche o array com 1, 2, 3...n
 
-  pessoa.apresentar();
+  std::cout << sum_elements(array); // soma todos elementos do array
 }
 ```
 
-Structs possuem uma função especial que é chamada quando uma instância daquela struct é criada. Essa função é chamada de construtor, normalmente usada para dar valores para as variáveis que uma struct possui.
+# O(n log n)
 
-O construtor é uma função normal, exceto pelo fato de que não tem um tipo de retorno e só deve ser chamada uma vez de maneira automática.
+Um exemplo de algoritmo O(n log n) é o famoso quicksort, usado para ordenar vetores.
 
-Quando acessamos uma variável de uma struct, dentro dela mesmo, podemos usar `this` para deixar explicito que a quem tal variável pertence. Isso não é necessário na maioria dos casos, a não ser por preferência ou por um caso onde existe ambiguidade.
+```cpp
+#include <algorithm> // pra poder usar std::swap
 
-```cpp{0}
+void quicksort(std::vector<int>& array, int start, int end)
+{
+  if (start >= end)
+    return;
+
+  int pivot_index = start;
+  int const pivot_value = array[end];
+
+  for (int i = start; i < end; ++i)
+  {
+    if (array[i] < pivotValue)
+    {
+      std::swap(array[i], array[pivot_index]);
+      ++pivot_index;
+    }
+  }
+
+  std::swap(array[pivot_index], array[end]);
+
+  quicksort(array, start, pivot_index - 1, fn);
+  quicksort(array, pivot_index + 1, end, fn);
+}
+```
+
+O(n log n) é o tempo médio que um quicksort leva, mas isso não é uma regra,
+um quicksort pode levar O(n²) no pior dos casos e O(n) no melhor.
+
+# Tempo quadrático O(n²)
+
+Em um algoritmo O(n²) o tempo de execução aumenta de forma quadrática.
+
+```cpp
 #include <iostream>
-#include <string>
-
-struct Pessoa {
-  std::string nome;
-  int idade;
-
-  /* O construtor não precisa de um tipo de retorno
-   *
-   * Usando this para deixar explicito que estamos copiando o valor das variáveis nome e idade
-   * passadas nos construtor, para as variáveis nome e idade da instância da struct.
-   **/
-  Pessoa(std::string nome, int idade) {
-    this->nome = nome;
-    this->idade = idade;
-  }
-
-  void apresentar() {
-    std::cout << "Meu nome e " << nome << " e tenho " << idade << " anos";
-  }
-};
+#include <vector>
 
 int main()
 {
-  Pessoa pessoa("John Doe", 30);
+  std::array<std::array<int, 5>, 5> matrix; // matrix 5x5
 
-  pessoa.apresentar();
+  /* Prenchendo a matriz */
+  for(int i = 0; i < 5; ++i){
+    for(int j = 0; j < 5; ++j){
+      matrix[i][j] = i + j;
+    }
+  }
 }
 ```
 
-Caso nenhum construtor seja declarado, o compilador irá criar um construtor vazio.
+Uma matriz de 5 linhas e 5 colunas precisa de dois loops para prenche-la, o loop interior roda 5 vezes para cada vez que o exterior roda, logo, o tempo que leva para prencher uma matriz 5x5 é 5 \* 5 ou 5². Podemos assumir que o tempo que levaria para prencher uma matriz 10x10 seria 10², uma matriz 100x100 100², resumindo, o tempo que leva para preencher uma matriz é O(n²)
 
-Por exemplo:
+Um algoritmo pode ser O(n³), O(n⁴), O(n⁵), etc.
 
-```cpp{0}
-#include <iostream>
-#include <string>
+Big O Notation não para por aqui, isso foi apenas uma introdução.
 
-struct Pessoa {
-  std::string nome;
-  int idade;
-
-  /* Criado pelo compilador */
-  Pessoa() {}
-
-  void apresentar() {
-    std::cout << "Meu nome e " << nome << " e tenho " << idade << " anos";
-  }
-};
-
-int main()
-{
-  Pessoa pessoa;
-}
-```
-
-Podemos ter mais de um construtor, com cada um deles fazendo uma coisa diferente.
-
-```cpp{0}
-#include <iostream>
-#include <string>
-
-struct Pessoa {
-  std::string nome;
-  int idade;
-
-  /* Primeiro */
-  Pessoa(std::string nome, int idade) {
-    this->nome = nome;
-    this->idade = idade;
-  }
-
-  /* Segundo */
-  Pessoa(std::string nome) {
-    this->nome = nome;
-    this->idade = -1 // Vamos considerar -1 como desconhecido
-  }
-
-  /* Terceiro */
-  Pessoa(int idade) {
-    this->nome = "desconhecido";
-    this->idade = idade;
-  }
-
-  void apresentar() {
-    std::cout << "Meu nome e " << nome << " e tenho " << idade << " anos";
-  }
-};
-
-int main()
-{
-  Pessoa pessoa("John Doe", 30); // Chama o primeiro construtor
-
-  Pessoa pessoa("John Doe"); // Chama o segundo construtor
-
-  Pessoa pessoa(30); // Chama o teceiro construtor
-}
-```
+Alguns que não foram mencionados: O(n^c), O(c^n), O(n^n), O(n!)

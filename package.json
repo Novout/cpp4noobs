@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Tutorial de C++ da He4rt Developers",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": "https://github.com/Novout/He4rt-CPP-Tutorial.git",
   "author": "Thiago Rezende <bitrateti@gmail.com>",
