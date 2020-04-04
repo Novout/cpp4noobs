@@ -10,7 +10,7 @@
   <p align="center">
     <strong>Este curso ainda está sendo desenvolvido.</strong>
     <br />
-    <a href="https://novout.github.io/He4rt-CPP-Tutorial/"><strong>Explore a documentação »</strong></a>
+    <a href="https://novout.github.io/cpp4noobs/"><strong>Explore a documentação »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Novout/He4rt-CPP-Tutorial/issues">Report Bug</a>
