@@ -20,11 +20,16 @@ int factorial(int number)
   /**
     * Toda função recursiva precisa de uma condição de parada,
     * caso contrário entrará em um loop infinito
-    * Nesse caso, a função retorna quando o número for <= 1
+    * Nesse caso, a função retorna quando encontrar
+    * essa condição de parada
+    * No caso da função fatorial, existem duas condições de parada:
+    * quando number == 0 ou quanto number == 1, pois:
+    * 0! = 1
+    * 1! = 1
   */
   if (number <= 1)
   {
-    return number;
+    return 1;
   }
 
   /**
@@ -40,7 +45,7 @@ int factorial(int number)
 */
 int factorial(int number)
 {
-  return number <= 1 ? number : number * factorial(number - 1);
+  return number <= 1 ? 1 : number * factorial(number - 1);
 }
 
 int fibonacci(int number)
