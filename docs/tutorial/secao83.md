@@ -20,7 +20,7 @@ int factorial(int number)
   /**
     * Toda função recursiva precisa de uma condição de parada,
     * caso contrário entrará em um loop infinito
-    * Nesse caso, a função retorna quando o encontrar
+    * Nesse caso, a função retorna quando encontrar
     * essa condição de parada
     * No caso da função fatorial, existem duas condições de parada:
     * quando number == 0 ou quanto number == 1, pois:
