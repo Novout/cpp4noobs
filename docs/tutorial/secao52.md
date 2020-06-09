@@ -12,27 +12,27 @@ String's não são nada menos que cadeias de caracteres, por exemplo:
 
 Cada caractere representa uma posição
 
-H - 1
+H - 0
 
-e - 2
+e - 1
+
+l - 2
 
 l - 3
 
-l - 4
+o - 4
 
-o - 5
+' ' - 5
 
-' ' - 6
+W - 6
 
-W - 7
+o - 7
 
-o - 8
+r - 8
 
-r - 9
+l - 9
 
-l - 10
-
-d - 11
+d - 10
 
 Para utilizar o std::string é simples:
 

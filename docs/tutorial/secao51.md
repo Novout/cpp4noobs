@@ -6,7 +6,7 @@ Primeiramente,vamos falar dos <strong>Operadores Aritméticas</strong> e são, b
 | ------------- | :------: | -------------------------: |
 | Adição        |    +     |              int a = 5 + 2 |
 | Subtração     |    -     |        int b = (4 - 2) - 1 |
-| Multiplicação |    \    | int c = ((2 _ 2) _ 2) \ 2 |
+| Multiplicação |    *     |  int c = ((2 * 2) * 2) * 2 |
 | Divisão       |    /     |        int d = (8 / 6) / 2 |
 | Módulo        |    %     |              int e = 4 % 2 |
 
