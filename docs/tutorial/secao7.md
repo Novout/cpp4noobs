@@ -25,7 +25,7 @@ int main ()
      */
 
     /**
-      * Um array pode conter (quase)qualquer tipo.
+      * Um array pode conter (quase) qualquer tipo.
       * Por exemplo: int, float, double, std::string
       * Acessar um elemento que está no array leva tempo constante,
       * falaremos mais sobre isso na seção <link pra seção de Big O Nonation>
@@ -120,14 +120,8 @@ int main ()
         std::cout << "Digite a " << (i + 1) << " idade: \n";
         std::cin >> idade[i];
 
-        if(idade[i] >= 18) 
-        {
-            adulto[i] = true;
-        }
-        else 
-        {
-            adulto[i] = false;
-        }
+        adulto[i] = idade[i] >= 18;   // Como o operador >= retorna um booleano, o vetor será corretamente preenchido.
+
         i++; // Sempre que chegar no final do loop, será interado para conseguirmos dar entrada de dados em outra posição do vetor
     }
 
@@ -156,16 +150,25 @@ Como vimos, para percorrer um vetor precisamos de um loop, para percorrer des de
 
 O `FOR` é muito parecido com o `WHILE`, mas com a vantagem de alguns "recursos" incluídos para facilitar a utilização de loop's em determinadas situações.
 
-FOR:
+De modo geral, um `for` segue a seguinte forma:
+
 ```cpp{0}
-for(int i = 0;i < <tamanho_do_vetor>; i++) {}
+for(<bloco de definições>; <bloco de critério-de-parada>; <atualização de variável>) {}
+```
+
+Pode-se definir qualquer quantidade de variáveis no bloco de definições, assim como atualizar qualquer variável no bloco de atualização, mas o bloco de critério de parada deve *sempre* se tratar de uma expressão booleana.
+
+Normalmente, é utilizado da seguinte maneira:
+
+```cpp{0}
+for(int i = 0; i  <tamanho_do_vetor>; i++) {}
 ```
 
 `int i = 0` é o valor inicializado.
 
 `i < <tamanho_do_vetor>` é a condição para o for continuar.
 
-`i++` é o valor que vai ser iterado ao final do loop, igual utilizamos nos exemplo anterioes com `i++` no final de cada loop.
+`i++` é o valor que vai ser iterado ao final do loop, assim como utilizamos nos exemplos anteriores com `i++` no final de cada loop.
 
 * Lembrando que poderia ser qualquer outro valor no `i++`, utilizamos como padrão para avançar a próxima posição no vetor
 
@@ -190,6 +193,8 @@ int main ()
   }
 }
 ```
+
+Para ler, e exibir, dez números letras da linha de comando, pode-se utilizar o código abaixo:
 
 ```cpp{0}
 #include <iostream>

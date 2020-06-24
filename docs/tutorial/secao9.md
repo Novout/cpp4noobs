@@ -84,3 +84,33 @@ Consequentemente, nosso programa será compilado e vinculado corretamente.
 Se você receber um erro do compilador indicando que media.h não foi encontrado, verifique se o arquivo está realmente com o nome add.h. Dependendo de como você o criou e o nomeou, é possível que o arquivo tenha sido nomeado como add (sem extensão) ou media.h.txt ou media.hpp. Verifique também se ele está no mesmo diretório que o restante dos seus arquivos de código.
 
 Se você receber um erro do vinculador sobre a adição de função não ser definida, inclua media.cpp em seu projeto para que a definição de adição de função possa ser vinculada ao programa.
+
+## Aviso 
+
+O pré-processador *não* checa se o arquivo a ser incluindo está sendo incluindo mais de uma vez. Isto pode se tornar um problema
+em projetos maiores, com diversos `.cpp`, visto que uma inclusão dupla de _header_ causará um problema de compilação.
+
+Para contornar este problema, podemos usar uma estratégia chamada de _header guard_, que consiste em criar uma macro que registra se aquele arquivo já foi incluido previamente.
+
+Exemplo:
+
+Em `media.hpp`
+```cpp{0}
+
+#ifndef __MEDIA                     // Caso __MEDIA não for definido ..
+#define __MEDIA                     // .. definiremos __MEDIA e incluiremos o header
+int media(int a, int b, int c);
+
+    // ...
+
+#endif                              // Finalizando o ifndef
+```
+
+Ou seja, quando o arquivo for incluído uma vez, `__MEDIA` será definido. Quando o arquivo for incluído novamente, o pré-processador verá que `__MEDIA` já foi definido e não incluirá o _header_.
+
+Uma outra alternativa menos portátil é usar um *pragma*.
+```cpp{0}
+
+#pragma once                        // Garante que o arquivo seja incluido apenas uma vez.
+int media(int a, int b, int c);
+```

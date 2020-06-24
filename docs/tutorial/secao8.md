@@ -15,7 +15,7 @@ void nome_função ()
 }
 ```
 
-`void` são funções que retornam `nada`, também conhecidas como `procedimento`
+`void` são funções que não retornam valor algum, também conhecidas como *procedimento*.
 
 Exemplos:
 
@@ -85,7 +85,7 @@ int main ()
 }
 ```
 
-Como já discutimos em seções anteriores, quando declaramos `tipo a` ou `tipo a = valor` ele existe apenas no escopo onde foi criado, e que chamamos de declaração na memória `stack`(teremos uma seção especificamente para memória `stack` e `heap`)
+Como já discutimos em seções anteriores, quando declaramos `tipo a` ou `tipo a = valor` ele existe apenas no escopo onde foi criado, e que chamamos de declaração na memória `stack` (teremos uma seção especificamente para memória `stack` e `heap`)
 
 Então os parâmetros existem `APENAS` nas funções, no caso a função `CalcularSoma()` não reconhece os inteiros declarados no `main()`
 
@@ -176,7 +176,7 @@ Mas, temos um porém:
 
 `n1` continua com o mesmo valor, pois `a` só existe dentro da função
 
-Da mesma forma que funções void's retornam nada, temos também funções int,float,char... que retornam o seu tipo
+Da mesma forma que funções voids retornam nada, temos também funções int,float,char... que retornam o seu tipo
 
 ```cpp{0}
 #include <iostream>
@@ -283,7 +283,7 @@ Podemos retornar a função main para indicar que tudo ocorreu bem por conseguir
 
 Caso nada seja retornado pela função main, 0 é assumido.
 
-Temos a biblioteca `<cstdlib>` que possui `EXIT_SUCCESS`, considerado uma convensão para programas em C++
+Temos a biblioteca `<cstdlib>` que possui `EXIT_SUCCESS`, considerado uma convensão para programas em C++.
 
 ```cpp{0}
 #include <iostream>
