@@ -17,7 +17,7 @@ Operadores de comparação:
 
 Condições são comparações que retornam `verdadeiro` ou `falso` para executar ou não um `bloco(escopo)`.
 
-#`if` (se) `else if` (se senão) `else` (senão)
+`if` (se) `else if` (se senão) `else` (senão)
 
 ```cpp{0}
 #include <iostream>
@@ -31,13 +31,15 @@ int main ()
      *|--------------------------------------|
      */
 
-    char sexo = 'M'; // Declaramos a variável `sexo` do tipo `char` e inicializamos com o caractere `M`
+    char sexo = 'M';    // Declaramos a variável `sexo` do tipo `char` e inicializamos com o caractere `M`
 
     // Queremos comparar para saber se `sexo` é masculino(M) ou feminino(F)
-    if(sexo == 'M')  // Verificando se sexo é igual ao caractere M
-    {// Se a comparação for `verdadeira`, que é o nosso caso, entrará neste escopo
+    if(sexo == 'M')     // Verificando se sexo é igual ao caractere M
+    {
+        // Se a comparação for `verdadeira`, que é o nosso caso, entrará neste escopo
         std::cout << sexo << " e masculino" << std::endl;
-    } // if, else if e else são uma sequência, então assim que o escopo de uma condição acabar podemos colocar em sequência
+    } 
+    // if, else if e else são uma sequência, então assim que o escopo de uma condição acabar podemos colocar em sequência
     else // Como se tem apenas duas opções `M` e `F`, não precisamos usar o `else if`, em caso de precisar fazer outras comparações em uma mesma cadeia, teríamos que usar `else if` e `else` apenas para a última opção que não necessita de comparação
     {
         std::cout << sexo << " e feminino" << std::endl;
@@ -48,8 +50,6 @@ int main ()
 ```
 
 ```cpp{0}
-#include <iostream>
-
 #include <iostream>
 
 int main () 
@@ -171,7 +171,7 @@ int main ()
     std::cout << "Digite um segundo numero: \n";
     std::cin >> numero2;
 
-    std::cout << "Digite uma opção: (A)Soma / (B) Subtracao / (C) Multiplicacao / (D) Divisao \n";
+    std::cout << "Digite uma opção: (A) Soma / (B) Subtracao / (C) Multiplicacao / (D) Divisao \n";
     std::cin >> opcao;
 
     switch(opcao) // Switch de opcao

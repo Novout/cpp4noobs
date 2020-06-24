@@ -159,8 +159,8 @@ int main()
 {
   Pessoa pessoa("John Doe", 30); // Chama o primeiro construtor
 
-  Pessoa pessoa("John Doe"); // Chama o segundo construtor
+  Pessoa pessoa("John Doe");     // Chama o segundo construtor
 
-  Pessoa pessoa(30); // Chama o teceiro construtor
+  Pessoa pessoa(30);             // Chama o terceiro construtor
 }
 ```

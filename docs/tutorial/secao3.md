@@ -23,13 +23,13 @@ int main ()
 
 - A seguir, iremos explicar todos os conceitos por trás deste `Hello World`:
 
-# Sequência
+### Sequência
 
 - O procedimento de código é de cima para baixo e com conteúdos em sequência, separados por `;`
 
 - Será melhor explicado na seção de variáveis.
 
-# Bibliotecas
+### Bibliotecas
 
 ```cpp{0}
 #include <iostream>
@@ -53,7 +53,7 @@ int main() {}
 
 - Todo o procedimento do seu código inicia-se nesta função.
 
-- `{}` é o que chamamos de <strong>escopo</strong>, o que for declarado des de seu início `{` até seu fim `}` irá existir apenas dentro dele.
+- `{}` é o que chamamos de <strong>escopo</strong>, o que for declarado desde seu início `{` até seu fim `}` irá existir apenas dentro dele.
 
 - Como `main` é uma função, precisamos colocar `()` após a declaração de seu nome.
 
