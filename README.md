@@ -78,13 +78,13 @@ yarn install
 Para iniciar o servidor de desenvolvimento utilize o seguinte comando
 
 ```sh
-yarn docs:dev
+yarn dev
 ```
 
 Para realizar a build do projeto execute o seguinte comando
 
 ```sh
-yarn docs:build
+yarn build
 ```
 
 ## Contribuidores
