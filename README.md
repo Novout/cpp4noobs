@@ -2,37 +2,17 @@
 <br />
 <p align="center">
   <a href="https://github.com/Novout/He4rt-CPP-Tutorial">
-    <img src="docs/.vuepress/public/images/he4rtlogo.png" alt="Logo" width="350" height="300">
+    <img src="docs/.vuepress/public/images/footer_4noobs.svg" alt="Logo" width="60%">
   </a>
 
   <h3 align="center">Tutorial de C++ da He4rt Developers</h3>
-
-  <p align="center">
-    <strong>Este curso ainda está sendo desenvolvido.</strong>
-    <br />
-    <a href="https://novout.github.io/He4rt-CPP-Tutorial/"><strong>Explore a documentação »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Novout/He4rt-CPP-Tutorial/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Novout/He4rt-CPP-Tutorial/issues">Request Feature</a>
-  </p>
 </p>
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+## Conteúdo
 
-- [Sobre o Projeto](#sobre-o-projeto)
-  - [Desenvolvido Com](#desenvolvido-com)
-- [Iniciando](#iniciando)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Instalação](#instalação)
-- [Como Usar](#como-usar)
-- [Contribuidores](#contribuidores)
-- [Como Contribuir](#como-contribuir)
-- [Licença](#licença)
-- [Contato](#contato)
+- **Para não precisar rodar o projeto localmente, pode acessar diretamente por** [aqui](https://novout.github.io/cpp4noobs/)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -63,7 +43,7 @@ Os programas a seguir são necessários para estender, modificar e utilizar o pr
 1. Clone o repositorio
 
 ```sh
-git clone https://github.com/Novout/He4rt-CPP-Tutorial.git
+git clone https://github.com/Novout/cpp4noobs.git
 ```
 
 2. Instale as dependências
@@ -79,13 +59,13 @@ yarn install
 Para iniciar o servidor de desenvolvimento utilize o seguinte comando
 
 ```sh
-yarn docs:dev
+yarn dev
 ```
 
 Para realizar a build do projeto execute o seguinte comando
 
 ```sh
-yarn docs:build
+yarn build
 ```
 
 ## Contribuidores
@@ -100,10 +80,11 @@ Contribuições fazem com que a comunidade open source seja um lugar incrível p
 são **extremamente apreciadas**
 
 1. Realize um Fork do projeto
-2. Crie um branch com a nova feature (`git checkout -b feature/AmazingFeature`)
-3. Realize o Commit (`git commit -m 'Add some AmazingFeature'`)
-4. Realize o Push no Branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+2. Adicione o conteúdo (`git add -A`)
+3. Crie um branch com a nova feature (`git checkout -b feature/featureBraba`)
+4. Realize o Commit (`git commit -m 'adicionando conteudo brabo'`)
+5. Realize o Push no Branch (`git push origin feature/featureBraba`)
+6. Abra um Pull Request
 
 <!-- LICENSE -->
 
@@ -119,9 +100,9 @@ He4rt Developers - [@He4rt_Developers](https://twitter.com/He4rtDevs)
 
 Thiago Rezende - [@HorusHe4rt](https://twitter.com/HorusHe4rt) - bitrateti@gmail.com
 
-Giovane Cardoso - [@NovoutT](https://twitter.com/NovoutT)
+Giovane Cardoso - [@NovoutT](https://twitter.com/NovoutT) - novout@hotmail.com
 
-Link do Projeto: [https://github.com/Novout/He4rt-CPP-Tutorial](https://github.com/Novout/He4rt-CPP-Tutorial)
+Link do Projeto: [https://github.com/Novout/He4rt-CPP-Tutorial](https://github.com/Novout/cpp4noobs)
 
 ## Base
 

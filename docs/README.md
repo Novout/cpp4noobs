@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/he4rtlogo.png
+heroImage: /images/footer_4noobs.svg
 actionText: Inicie Agora →
 actionLink: /tutorial/
 features:
