@@ -7,10 +7,13 @@
     "build": "vuepress build docs"
   },
   "repository": "https://github.com/Novout/He4rt-CPP-Tutorial.git",
-  "author": "Thiago Rezende <bitrateti@gmail.com>",
+  "author": "He4rt Developers",
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "vuepress": "^1.0.3"
+    "vuepress": "^1.5.0"
+  },
+  "dependencies": {
+    "vuepress-theme-yuu": "^2.3.0"
   }
 }

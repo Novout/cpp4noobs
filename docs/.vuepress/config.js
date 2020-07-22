@@ -1,8 +1,13 @@
 module.exports = {
   base: "/cpp4noobs/",
   title: "Curso de CPP da He4rt Developers",
+  theme: "yuu",
   description: "C++",
   themeConfig: {
+    yuu: {
+      defaultDarkTheme: true,
+      defaultColorTheme: "purple",
+		},
     nav: [
       { text: "Home", link: "/" },
       { text: "Tutorial", link: "/tutorial/" },

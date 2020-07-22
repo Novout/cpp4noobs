@@ -5,7 +5,7 @@ actionText: Inicie Agora →
 actionLink: /tutorial/
 features:
 - title: Completo
-  details: Nosso tutorial tem como objetivo oferecer desde o básico ao avançado da linguagem C++
+  details: Nosso tutorial tem como objetivo oferecer desde o básico ao intermediário da linguagem C++
 - title: Didática
   details: Buscamos uma didática interativa e direta buscando uma curva de aprendizado exponencial.
 - title: Prática
