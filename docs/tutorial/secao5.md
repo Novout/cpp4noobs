@@ -58,7 +58,7 @@ int main ()
 {
     int numero = 3 // variavel numero de tipo inteiro que recebe o valor '3'
 
-    /**
+    /*
     Podemos também comentar trechos de código
     que não quisermos utilizar em um
     determinado momento
@@ -126,7 +126,7 @@ int main ()
 ```
 # Entrada de Dados com `std::cin`
 
-Agora iremos falar do `std::cin`(c in) da biblioteca `<iostream>`, ela permite a entrada de dados,sendo sua sintaxe parecida com a do `std::cout`
+Agora iremos falar do `std::cin` da biblioteca `<iostream>`, ela permite a entrada de dados,sendo sua sintaxe parecida com a do `std::cout`
 
 ```cpp{0}
 std::cin >> <variavel>;
@@ -158,7 +158,7 @@ int main ()
 
 - Lembrando que `std::cout << "Digite a idade do aluno: " << std::endl;` é apenas visual para a interação de programa-usuário.
 
-- Existe outras formas de inicialização:
+- Existem outras formas de inicialização:
 
 ```cpp{0}
 #include <iostream>
