@@ -104,7 +104,7 @@ T maior(T a,T b) // Retornar o maior valor
  
 int main(int, char**)
 {
-    int a = maior(3, 7); // Retorna 10
+    int a = maior(3, 7); // Retorna 7
     std::cout << a << std::endl;
  
     double b = maior(6.34, 25.001); // returns 25.001
