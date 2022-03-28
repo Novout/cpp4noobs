@@ -110,4 +110,4 @@ AB
 
 - Algumas IDE's faz a quebra de linha automaticamente sem a necessidade do `std::endl`.
 
-- Todos os conceitos passado será utilizado ao longo do curso, então não se assuste que com a prática estes conceitos serão facilmente fixados,e estaremos disponibilizando listas de exercícios com gabarito para melhor fixação.
+- Todos os conceitos passado será utilizado ao longo do curso, então não se assuste que com a prática estes conceitos serão facilmente fixados.
