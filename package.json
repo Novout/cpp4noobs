@@ -4,13 +4,17 @@
   "description": "Tutorial de C++ da He4rt Developers",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "patch": "generi log patch",
+		"minor": "generi log minor",
+		"major": "generi log major"
   },
   "repository": "https://github.com/Novout/He4rt-CPP-Tutorial.git",
   "author": "He4rt Developers",
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "generi": "^2.0.4",
     "vuepress": "^1.5.0"
   },
   "dependencies": {
